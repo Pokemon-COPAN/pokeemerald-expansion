@@ -8063,7 +8063,7 @@ u8 IsMonDisobedient(void)
 
 #if B_OBEDIENCE_MECHANICS >= GEN_8
     if (!IsOtherTrainer(gBattleMons[gBattlerAttacker].otId, gBattleMons[gBattlerAttacker].otName))
-        levelReferenced = gBattleMons[gBattlerAttacker].metLevel;
+        levelReferenced = gBattleMons[gBattlerAttacker].level; //.metLevel;
     else
 #else
     if (gBattleMons[gBattlerAttacker].level <= obedienceLevel)
