@@ -4410,6 +4410,26 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_COPAN_HOUSE",
+      "name": "CopanHouse_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/CopanHouse/border.bin",
+      "blockdata_filepath": "data/layouts/CopanHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_COPAN_LAB",
+      "name": "CopanLab_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/CopanLab/border.bin",
+      "blockdata_filepath": "data/layouts/CopanLab/map.bin"
     }
   ]
 }
