@@ -1071,3 +1071,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CopanHouse/scripts.inc"
 
 	.include "data/maps/CopanLab/scripts.inc"
+
+	.include "data/maps/SandboxGym/scripts.inc"
+
+	.include "data/maps/IndoorSanboxGym/scripts.inc"
