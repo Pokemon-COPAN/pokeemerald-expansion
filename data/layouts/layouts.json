@@ -4430,6 +4430,26 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/CopanLab/border.bin",
       "blockdata_filepath": "data/layouts/CopanLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDBOX_GYM",
+      "name": "SandboxGym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SandboxGym/border.bin",
+      "blockdata_filepath": "data/layouts/SandboxGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDOOR_SANBOX_GYM",
+      "name": "IndoorSanboxGym_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGym",
+      "border_filepath": "data/layouts/IndoorSanboxGym/border.bin",
+      "blockdata_filepath": "data/layouts/IndoorSanboxGym/map.bin"
     }
   ]
 }

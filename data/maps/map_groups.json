@@ -35,8 +35,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-	"gMapGroup_CopanRoutesTowns",
-	"gMapGroup_CopanIndoor"
+    "gMapGroup_CopanRoutesTowns",
+    "gMapGroup_CopanIndoor"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -625,9 +625,11 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_CopanRoutesTowns": [
-    "CopanHouse"
+    "CopanHouse",
+    "SandboxGym"
   ],
-    "gMapGroup_CopanIndoor": [
-	"CopanLab"
+  "gMapGroup_CopanIndoor": [
+    "CopanLab",
+    "IndoorSanboxGym"
   ]
 }

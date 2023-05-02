@@ -1063,3 +1063,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CopanHouse/scripts.inc"
 
 	.include "data/maps/CopanLab/scripts.inc"
+
+	.include "data/maps/SandboxGym/scripts.inc"
+
+	.include "data/maps/IndoorSanboxGym/scripts.inc"
