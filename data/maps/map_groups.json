@@ -626,10 +626,10 @@
   ],
   "gMapGroup_CopanRoutesTowns": [
     "CopanHouse",
-    "SandboxGym"
+    "Sandbox_Town"
   ],
   "gMapGroup_CopanIndoor": [
     "CopanLab",
-    "IndoorSanboxGym"
+    "Sandbox_Gym"
   ]
 }

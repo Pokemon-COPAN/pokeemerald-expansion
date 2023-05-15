@@ -1,9 +1,9 @@
 {
-  "id": "MAP_SANDBOX_GYM",
-  "name": "SandboxGym",
-  "layout": "LAYOUT_SANDBOX_GYM",
+  "id": "MAP_SANDBOX_TOWN",
+  "name": "Sandbox_Town",
+  "layout": "LAYOUT_SANDBOX_TOWN",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_COPAN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
