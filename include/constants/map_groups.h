@@ -592,12 +592,12 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // gMapGroup_CopanRoutesTowns
-#define MAP_COPAN_HOUSE (0 | (34 << 8))
-#define MAP_SANDBOX_GYM (1 | (34 << 8))
+#define MAP_COPAN_HOUSE  (0 | (34 << 8))
+#define MAP_SANDBOX_TOWN (1 | (34 << 8))
 
 // gMapGroup_CopanIndoor
-#define MAP_COPAN_LAB         (0 | (35 << 8))
-#define MAP_INDOOR_SANBOX_GYM (1 | (35 << 8))
+#define MAP_COPAN_LAB   (0 | (35 << 8))
+#define MAP_SANDBOX_GYM (1 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 
