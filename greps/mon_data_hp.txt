@@ -1,0 +1,295 @@
+include/pokemon.h:39:    MON_DATA_HP_EV,
+include/pokemon.h:52:    MON_DATA_HP_IV,
+include/pokemon.h:70:    MON_DATA_HP,
+Binary file pokeemerald.elf matches
+src/battle_ai_main.c:279:        if (GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:104:        if (GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:191:        if (GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:291:                            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_ai_switch_items.c:565:        if (GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:657:        if (GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:751:                        if (GetMonData(&party[monToSwitchId], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:956:            || GetMonData(&party[i], MON_DATA_HP) == 0
+src/battle_ai_switch_items.c:1044:        if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_ai_util.c:2473:    if (hazardDamage >= GetMonData(mon, MON_DATA_HP))
+src/battle_ai_util.c:3230:        u16 currHp = GetMonData(&party[i], MON_DATA_HP);
+src/battle_ai_util.c:3324:         && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_ai_util.c:3348:         && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_ai_util.c:3351:         && GetMonData(&party[i], MON_DATA_HP) < GetMonData(&party[i], MON_DATA_MAX_HP))
+src/battle_ai_util.c:3365:        if (GetMonData(&party[i], MON_DATA_HP, NULL) == 0)
+src/battle_anim_mons.c:926:                if (GetMonData(&gEnemyParty[gBattlerPartyIndexes[battlerId]], MON_DATA_HP) == 0)
+src/battle_anim_mons.c:931:                if (GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerId]], MON_DATA_HP) == 0)
+src/battle_anim_water.c:1341:        hp = GetMonData(slot, MON_DATA_HP);
+src/battle_anim_water.c:1349:        hp = GetMonData(slot, MON_DATA_HP);
+src/battle_controllers.c:594:             && GetMonData(mon, MON_DATA_HP) != 0
+src/battle_controller_link_opponent.c:580:        battleMon.hpIV = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_opponent.c:589:        battleMon.hp = GetMonData(&gEnemyParty[monId], MON_DATA_H
+);
+src/battle_controller_link_opponent.c:666:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_EV);
+src/battle_controller_link_opponent.c:714:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_opponent.c:723:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_opponent.c:773:        data16 = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_link_opponent.c:913:            SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_link_opponent.c:927:            SetMonData(&gEnemyParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_link_opponent.c:976:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_opponent.c:1012:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_opponent.c:1020:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_opponent.c:1050:        SetMonData(&gEnemyParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_opponent.c:1511:        u32 curHP = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_controller_link_partner.c:474:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_partner.c:483:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_H
+);
+src/battle_controller_link_partner.c:560:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_link_partner.c:608:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_partner.c:617:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_partner.c:667:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_link_partner.c:807:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_link_partner.c:821:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_link_partner.c:870:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_partner.c:906:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_partner.c:914:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_partner.c:944:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_partner.c:1348:        u32 curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_controller_opponent.c:597:        battleMon.hpIV = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_opponent.c:606:        battleMon.hp = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_opponent.c:683:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_EV);
+src/battle_controller_opponent.c:731:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_opponent.c:740:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_opponent.c:790:        data16 = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_opponent.c:939:            SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_opponent.c:953:            SetMonData(&gEnemyParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_opponent.c:1002:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_opponent.c:1038:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_opponent.c:1046:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_opponent.c:1076:        SetMonData(&gEnemyParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_opponent.c:1701:                if (GetMonData(&gEnemyParty[chosenMonId], MON_DATA_HP) != 0
+src/battle_controller_opponent.c:1734:            && GetMonData(&gEnemyParty[i], MON_DATA_HP) != 0)
+src/battle_controller_opponent.c:1758:        u32 curHP = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_controller_player.c:1853:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player.c:1862:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_player.c:1939:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_player.c:1987:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player.c:1996:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player.c:2046:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_player.c:2195:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_player.c:2209:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_player.c:2258:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player.c:2294:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player.c:2302:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player.c:2332:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player.c:2949:        u32 curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_controller_player_partner.c:660:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player_partner.c:669:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_player_partner.c:746:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_player_partner.c:794:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player_partner.c:803:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player_partner.c:853:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_player_partner.c:993:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_player_partner.c:1007:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_player_partner.c:1056:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player_partner.c:1092:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player_partner.c:1100:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player_partner.c:1130:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player_partner.c:1561:            if (GetMonData(&gPlayerParty[chosenMonId], MON_DATA_HP) != 0
+src/battle_controller_player_partner.c:1590:        u32 curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_controller_recorded_opponent.c:567:        battleMon.hpIV = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_opponent.c:576:        battleMon.hp = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_recorded_opponent.c:653:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_EV);
+src/battle_controller_recorded_opponent.c:701:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_opponent.c:710:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_opponent.c:760:        data16 = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_recorded_opponent.c:900:            SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_recorded_opponent.c:914:            SetMonData(&gEnemyParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_recorded_opponent.c:963:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_opponent.c:999:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_opponent.c:1007:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_opponent.c:1037:        SetMonData(&gEnemyParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_opponent.c:1463:    curHP = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_controller_recorded_player.c:548:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_player.c:557:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_recorded_player.c:634:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_recorded_player.c:682:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_player.c:691:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_player.c:741:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_recorded_player.c:881:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_recorded_player.c:895:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_recorded_player.c:944:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_player.c:980:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_player.c:988:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_player.c:1018:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_player.c:1487:    curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_controller_wally.c:476:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_wally.c:485:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_wally.c:562:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_wally.c:610:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_wally.c:619:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_wally.c:669:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_wally.c:809:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_wally.c:823:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_wally.c:872:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_wally.c:908:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_wally.c:916:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_wally.c:946:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_wally.c:1272:        u32 curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_debug.c:2017:            SetMonData(mon, MON_DATA_HP, &battleMon->hp);
+src/battle_dome.c:2299:            gSaveBlock2Ptr->frontier.domePlayerPartyData[i].evs[j] = GetMonData(&gPlayerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1], MON_DATA_HP_EV + j, NULL);
+src/battle_factory.c:455:                    SetMonData(&gPlayerParty[i], MON_DATA_HP_EV + j, &evs);
+src/battle_factory.c:496:                    SetMonData(&gEnemyParty[i], MON_DATA_HP_EV + j, &evs);
+src/battle_gfx_sfx_util.c:1019:    u16 hp = GetMonData(mon, MON_DATA_HP);
+src/battle_gfx_sfx_util.c:1060:    u16 hp = GetMonData(mon, MON_DATA_HP);
+src/battle_gfx_sfx_util.c:1075:        if (GetMonData(&gPlayerParty[battler1PartyId], MON_DATA_HP) != 0)
+src/battle_gfx_sfx_util.c:1077:        if (IsDoubleBattle() && GetMonData(&gPlayerParty[battler2PartyId], MON_DATA_HP) != 0)
+src/battle_gfx_sfx_util.c:1263:    hp = GetMonData(mon, MON_DATA_HP);
+src/battle_interface.c:1364:            s32 currHp = GetMonData(&gPlayerParty[gBattlerPartyIndexes[i]], MON_DATA_HP);
+src/battle_interface.c:2363:    s32 currHp = GetMonData(mon, MON_DATA_HP);
+src/battle_main.c:630:        u16 hp = GetMonData(&(party)[(i)], MON_DATA_HP);            \
+src/battle_main.c:1333:        gMultiPartnerParty[i].hp          = GetMonData(&gPlayerParty[offset + i], MON_DATA_HP);
+src/battle_main.c:3454:                    hpStatus[i].hp = GetMonData(&gEnemyParty[i], MON_DATA_HP);
+src/battle_main.c:3473:                    hpStatus[i].hp = GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/battle_message.c:3518:                && GetMonData(&gEnemyParty[id], MON_DATA_HP)
+src/battle_message.c:3895:            && (!onlyAlive || GetMonData(&gEnemyParty[i], MON_DATA_HP, NULL)))
+src/battle_pike.c:793:    SetMonData(mon, MON_DATA_HP, data);
+src/battle_pike.c:932:                    && GetMonData(mon, MON_DATA_HP) != 0)
+src/battle_pike.c:974:            && GetMonData(mon, MON_DATA_HP) != 0)
+src/battle_pike.c:1006:            && GetMonData(mon, MON_DATA_HP) != 0)
+src/battle_pike.c:1289:        u16 curr = GetMonData(mon, MON_DATA_HP);
+src/battle_pike.c:1492:        if (GetMonData(mon, MON_DATA_HP) == 0)
+src/battle_pike.c:1561:        u16 curr = GetMonData(mon, MON_DATA_HP);
+src/battle_pyramid.c:1409:            SetMonData(&gEnemyParty[0], MON_DATA_HP_IV + i, &id);
+src/battle_script_commands.c:4148:                if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+src/battle_script_commands.c:4241:                if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP)
+src/battle_script_commands.c:4331:            if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP) && GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL) != MAX_LEVEL)
+src/battle_script_commands.c:4375:                    gBattleMons[battlerId].hp = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP);
+src/battle_script_commands.c:4435:                HP_count += GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/battle_script_commands.c:4456:                HP_count += GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/battle_script_commands.c:4466:                HP_count += GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/battle_script_commands.c:4485:            HP_count += GetMonData(&gEnemyParty[i], MON_DATA_HP);
+src/battle_script_commands.c:6363:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:6387:             && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:6432:             && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:6451:             && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:6486:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:7531:            hpStatuses[i].hp = GetMonData(&party[i], MON_DATA_HP);
+src/battle_script_commands.c:8394:    gBattleMons[battler].hp = GetMonData(mon, MON_DATA_HP);
+src/battle_script_commands.c:8567:        if (species != SPECIES_NONE && species != SPECIES_EGG && GetMonData(&party[i], MON_DATA_HP) != 0)
+src/battle_script_commands.c:9131:            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]],
+ MON_DATA_HP, &gBattleMons[gActiveBattler].hp);
+src/battle_script_commands.c:12214:             && GetMonData(&party[i], MON_DATA_HP) != 0)
+src/battle_script_commands.c:12238:                   || GetMonData(&party[i], MON_DATA_HP) == 0);
+src/battle_script_commands.c:13984:            if (GetMonData(&party[gBattleCommunication[0]], MON_DATA_HP)
+src/battle_script_commands.c:15536:                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
+src/battle_script_commands.c:15590:                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
+src/battle_setup.c:746:        if (species != SPECIES_EGG && species != SPECIES_NONE && GetMonData(&gPlayerParty[i], MON_DATA_HP) != 0)
+src/battle_tower.c:3032:                SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_HP_EV + j, &sStevenMons[i].evs[j]);
+src/battle_tv.c:777:        if (!(gBattleTypeFlags & BATTLE_TYPE_LINK) && GetMonData(defMon, MON_DATA_HP, NULL) != 0)
+src/battle_tv.c:893:        if (GetMonData(atkMon, MON_DATA_HP, NULL)
+src/battle_tv.c:918:        if (GetMonData(atkMon, MON_DATA_HP, NULL) != 0
+src/battle_tv.c:935:        if (GetMonData(atkMon, MON_DATA_HP, NULL) != 0
+src/battle_tv.c:948:        if (GetMonData(atkMon, MON_DATA_HP, NULL) != 0)
+src/battle_tv.c:965:        if (GetMonData(atkMon, MON_DATA_HP, NULL) != 0)
+src/battle_util.c:3834:                    if (GetMonData(&party[i], MON_DATA_HP)
+src/battle_util.c:3917:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:3936:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:3976:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:3994:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:4023:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:8774:         && GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_util.c:10301:            && GetMonData(&party[id], MON_DATA_HP)
+src/battle_util.c:10774:        && GetMonData(&party[monId], MON_DATA_HP, NULL) != 0) // Burmy isn't fainted
+src/contest.c:2966:    if (GetMonData(pkmn, MON_DATA_HP) == 0)
+src/daycare.c:591:                iv = GetBoxMonData(&daycare->mons[whichParents[i]].mon, MON_DATA_HP_IV);
+src/daycare.c:592:                SetMonData(egg, MON_DATA_HP_IV, &iv);
+src/debug.c:2683:            SetMonData(&mon, MON_DATA_HP_IV + i, &iv_val);
+src/egg_hatch.c:328:        ivs[i] = GetMonData(egg, MON_DATA_HP_IV + i);
+src/egg_hatch.c:343:        SetMonData(temp, MON_DATA_HP_IV + i,  &ivs[i]);
+src/field_poison.c:36:        if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) != 0)
+src/field_poison.c:56:    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == 0 && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
+src/field_poison.c:129:            hp = GetMonData(pokemon, MON_DATA_HP);
+src/field_poison.c:133:            SetMonData(pokemon, MON_DATA_HP, &hp);
+src/field_specials.c:1981:    ivStorage[STAT_HP] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_H
+_IV);
+src/fldeff_softboiled.c:25:    hp = GetMonData(&gPlayerParty[GetCursorSelectionMonId()], MON_DATA_HP);
+src/fldeff_softboiled.c:56:    hp = GetMonData(&gPlayerParty[recipientPartyId], MON_DATA_HP);
+src/frontier_util.c:1996:            u16 hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/frontier_util.c:2481:            SetMonData(&gEnemyParty[monPartyId], MON_DATA_HP_EV + j, &sFrontierBrainsMons[facility][symbol][i].evs[j]);
+src/party_menu.c:1170:    if (GetMonData(&gPlayerParty[slot], MON_DATA_HP) == 0)
+src/party_menu.c:1846:    SetMonData(&gPlayerParty[tPartyId], MON_DATA_HP, &tHP);
+src/party_menu.c:1864:    tHP = GetMonData(mon, MON_DATA_HP);
+src/party_menu.c:1929:    if (GetMonData(mon, MON_DATA_HP) == 0)
+src/party_menu.c:2335:            DisplayPartyPokemonHP(GetMonData(mon, MON_DATA_HP), GetMonData(mon, MON_DATA_MAX_HP), menuBox);
+src/party_menu.c:2390:        DisplayPartyPokemonHPBar(GetMonData(mon, MON_DATA_HP), GetMonData(mon, MON_DATA_MAX_HP), menuBox);
+src/party_menu.c:2507:        if (GetMonData(&party[i], MON_DATA_SPECIES) != SPECIES_NONE && (GetMonData(&party[i], MON_DATA_HP) != 0 || GetMonData(&party[i], MON_DATA_IS_EGG)))
+src/party_menu.c:3964:    UpdateHPBar(spriteId, GetMonData(mon, MON_DATA_HP), GetMonData(mon, MON_DATA_MAX_HP));
+src/party_menu.c:4243:            if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE && GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+src/party_menu.c:4407:            hp = GetMonData(mon, MON_DATA_HP);
+src/party_menu.c:4442:            PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_DisplayHPRestoredMessage);
+src/party_menu.c:4714:            return GetMonData(mon, MON_DATA_HP_EV);
+src/party_menu.c:5439:    hp = GetMonData(mon, MON_DATA_HP);
+src/party_menu.c:5452:    PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_SacredAshDisplayHPRestored);
+src/party_menu.c:6025:        if (GetMonData(mon, MON_DATA_HP) != 0)
+src/party_menu.c:6234:    if (GetMonData(&gPlayerParty[slot], MON_DATA_HP) == 0)
+src/party_menu.c:6531:        if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_NONE && GetMonData(mon, MON_DATA_HP) != 0)
+src/pokemon.c:3295:    MON_DATA_HP_EV,
+src/pokemon.c:3388:    SetMonData(mon, MON_DATA_HP, &arg);
+src/pokemon.c:3521:        SetBoxMonData(boxMon, MON_DATA_HP_IV, &fixedIV);
+src/pokemon.c:3534:        SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+src/pokemon.c:3552:            SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+src/pokemon.c:3581:                    SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+src/pokemon.c:3681:    SetMonData(mon, MON_DATA_HP_IV, &ivs[STAT_HP]);
+src/pokemon.c:3715:            SetMonData(mon, MON_DATA_HP_EV + i, &evAmount);
+src/pokemon.c:3752:    SetMonData(mon, MON_DATA_HP_EV, &src->hpEV);
+src/pokemon.c:3761:    SetMonData(mon, MON_DATA_HP_IV, &value);
+src/pokemon.c:3814:    SetMonData(mon, MON_DATA_HP_EV, &src->hpEV);
+src/pokemon.c:3823:    SetMonData(mon, MON_DATA_HP_IV, &value);
+src/pokemon.c:3862:        SetMonData(mon, MON_DATA_HP_EV + i, &evAmount);
+src/pokemon.c:3897:            SetMonData(mon, MON_DATA_HP_EV + i, &evAmount);
+src/pokemon.c:3923:    dest->hpEV = GetMonData(mon, MON_DATA_HP_EV, NULL);
+src/pokemon.c:3930:    dest->hpIV = GetMonData(mon, MON_DATA_HP_IV, NULL);
+src/pokemon.c:4089:    s32 currentHP = GetMonData(mon, MON_DATA_HP, NULL);
+src/pokemon.c:4090:    s32 hpIV = GetMonData(mon, MON_DATA_HP_IV, NULL);
+src/pokemon.c:4091:    s32 hpEV = GetMonData(mon, MON_DATA_HP_EV, NULL);
+src/pokemon.c:4153:    SetMonData(mon, MON_DATA_HP, &currentHP);
+src/pokemon.c:4161:    SetMonData(dest, MON_DATA_HP, &value);
+src/pokemon.c:4630:    case MON_DATA_HP:
+src/pokemon.c:4810:    case MON_DATA_HP_EV:
+src/pokemon.c:4864:    case MON_DATA_HP_IV:
+src/pokemon.c:5048:    case MON_DATA_HP:
+src/pokemon.c:5184:    case MON_DATA_HP_EV:
+src/pokemon.c:5244:    case MON_DATA_HP_IV:
+src/pokemon.c:5450:         && GetMonData(&gPlayerParty[i], MON_DATA_HP, NULL) != 0
+src/pokemon.c:5467:         && GetMonData(&gPlayerParty[i], MON_DATA_HP, NULL) != 0)
+src/pokemon.c:5532:                SetMonData(&gEnemyParty[i], MON_DATA_HP_EV + j, &gBattleResources->secretBase->party.EVs[i]);
+src/pokemon.c:5630:    dst->hpIV = GetMonData(src, MON_DATA_HP_IV, NULL);
+src/pokemon.c:5639:    dst->hp = GetMonData(src, MON_DATA_HP, NULL);
+src/pokemon.c:6030:                            if (GetMonData(mon, MON_DATA_HP, NULL) != 0)
+src/pokemon.c:6054:                            if (GetMonData(mon, MON_DATA_HP, NULL) == 0)
+src/pokemon.c:6066:                            dataUnsigned = GetMonData(mon, MON_DATA_MAX_HP, NULL) - GetMonData(mon, MON_DATA_HP, NULL);
+src/pokemon.c:6084:                        if (GetMonData(mon, MON_DATA_MAX_HP, NULL) != GetMonData(mon, MON_DATA_HP, NULL))
+src/pokemon.c:6089:                                dataUnsigned = GetMonData(mon, MON_DATA_HP, NULL) + dataUnsigned;
+src/pokemon.c:6092:                                SetMonData(mon, MON_DATA_HP, &dataUnsigned);
+src/pokemon.c:6841:                u16 currentHp = GetMonData(mon, MON_DATA_HP, NULL);
+src/pokemon.c:7233:        evs[i] = GetMonData(mon, MON_DATA_HP_EV + i, 0);
+src/pokemon.c:7302:        SetMonData(mon, MON_DATA_HP_EV + i, &evs[i]);
+src/pokemon.c:7312:        count += GetMonData(mon, MON_DATA_HP_EV + i, 0);
+src/pokemon_size_record.c:55:    u16 hpIV = GetMonData(pkmn, MON_DATA_HP_IV) & 0xF;
+src/pokemon_storage_system.c:1454:            && GetMonData(&gPlayerParty[i], MON_DATA_HP) != 0)
+src/pokemon_storage_system.c:6829:            if (sStorage->displayMonIsEgg || GetMonData(&sStorage->movingMon, MON_DATA_HP) == 0)
+src/pokemon_summary_screen.c:1503:            sum->currentHP = GetMonData(mon, MON_DATA_HP);
+src/pokemon_summary_screen.c:1514:            sum->currentHP = GetMonData(mon, MON_DATA_HP);
+src/reshow_battle_screen.c:221:            if (GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+src/reshow_battle_screen.c:259:            if (GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+src/reshow_battle_screen.c:311:            if (GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+src/reshow_battle_screen.c:316:            if (GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0 || GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_IS_EGG))
+src/roamer.c:208:    SetMonData(mon, MON_DATA_HP, &ROAMER->hp);
+src/roamer.c:231:    ROAMER->hp = GetMonData(mon, MON_DATA_HP);
+src/script_pokemon_util.c:42:        SetMonData(&gPlayerParty[i], MON_DATA_HP, arg);
+src/secret_base.c:760:    evTotal  = GetMonData(pokemon, MON_DATA_HP_EV);
+src/trade.c:2304:            else if (GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+src/trade.c:2324:            else if (GetMonData(&gEnemyParty[i], MON_DATA_HP) == 0)
+src/trade.c:2348:            curHp = GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/trade.c:2356:            curHp = GetMonData(&gEnemyParty[i], MON_DATA_HP);
+src/trade.c:4570:    SetMonData(pokemon, MON_DATA_HP_IV, &inGameTrade->ivs[0]);
+src/wild_encounter.c:991:        if (GetMonData(&gPlayerParty[i], MON_DATA_HP) && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+test/test_runner_battle.c:879:            INVALID_IF(GetMonData(DATA.currentMon, MON_DATA_HP) == 0, "Battlers cannot be fainted");
+test/test_runner_battle.c:953:    SetMonData(DATA.currentMon, MON_DATA_HP, &hp);
+root@DESKTOP-9VR4M6Q:/mnt/c/Users/super/Desktop/project/romhacking/pokemon-copan#
