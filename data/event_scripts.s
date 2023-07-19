@@ -1059,9 +1059,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
-
 	.include "data/maps/CopanHouse/scripts.inc"
-
 	.include "data/maps/CopanLab/scripts.inc"
-
-	.include "data/maps/SandboxGym/scripts.inc"
+	.include "data/maps/Sandbox_Gym/scripts.inc"
+	.include "data/maps/Sandbox_Town/scripts.inc"
