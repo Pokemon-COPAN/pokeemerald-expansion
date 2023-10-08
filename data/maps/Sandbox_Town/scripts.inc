@@ -42,3 +42,4 @@ Sandbox_Town_Text_StillTiredTakeAnotherRest:
 Sandbox_Town_Text_DontNeedToBeShy:
 	.string "Is that so?\n"
 	.string "You don't need to be shy about it.$"
+
