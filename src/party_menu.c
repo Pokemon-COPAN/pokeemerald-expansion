@@ -5159,60 +5159,60 @@ static void DisplayExpPoints(u8 taskId, TaskFunc task, u8 holdEffectParam)
 
 void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
 {
-    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
-    struct PartyMenuInternal *ptr = sPartyMenuInternal;
-    s16 *arrayPtr = ptr->data;
-    u16 *itemPtr = &gSpecialVar_ItemId;
-    bool8 cannotUseEffect;
-    u8 holdEffectParam = ItemId_GetHoldEffectParam(*itemPtr);
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];	// select pokemon from party
+    struct PartyMenuInternal *ptr = sPartyMenuInternal;	
+    s16 *arrayPtr = ptr->data;					// not sure where this is pointing
+    u16 *itemPtr = &gSpecialVar_ItemId;			// item ID ?
+    bool8 cannotUseEffect;					// determines if item cannot be used
+    u8 holdEffectParam = ItemId_GetHoldEffectParam(*itemPtr);	// Every item has a specific holdeffectparam, sometimes it's 0.
 
     sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
-    if (sInitialLevel != MAX_LEVEL)
+    if (sInitialLevel != MAX_LEVEL)				// If not level 100
     {
-        BufferMonStatsToTaskData(mon, arrayPtr);
-        cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0);
-        BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);
+        BufferMonStatsToTaskData(mon, arrayPtr);						// Buffer mon stats to first pointer
+        cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0); 	// Determine if item cannot be used, and I also updates pokemon MON_DATA_EXP, and cures status. 
+        BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);					// I don't know what NUM_STATS is.
     }
     else
     {
-        cannotUseEffect = TRUE;
+        cannotUseEffect = TRUE;				// Cannot use item if level 100.
     }
-    PlaySE(SE_SELECT);
-    if (cannotUseEffect)
+    PlaySE(SE_SELECT);						// Sound effect
+    if (cannotUseEffect)					// if item (rarecandy/expcandy) cannot be used:
     {
         u16 targetSpecies = SPECIES_NONE;
 
         // Resets values to 0 so other means of teaching moves doesn't overwrite levels
-        sInitialLevel = 0;
+        sInitialLevel = 0; 					// I don't understand why!
         sFinalLevel = 0;
 
-        if (holdEffectParam == 0)
+        if (holdEffectParam == 0)				// Rare candy can evolve a pokemon at level 100!
             targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL);
 
-        if (targetSpecies != SPECIES_NONE)
+        if (targetSpecies != SPECIES_NONE) 			// If evolution occurs:
         {
-            RemoveBagItem(gSpecialVar_ItemId, 1);
+            RemoveBagItem(gSpecialVar_ItemId, 1);				// use item 
             FreePartyPointers();
-            gCB2_AfterEvolution = gPartyMenu.exitCallback;
-            BeginEvolutionScene(mon, targetSpecies, TRUE, gPartyMenu.slotId);
-            DestroyTask(taskId);
+            gCB2_AfterEvolution = gPartyMenu.exitCallback;			// close menu ? 
+            BeginEvolutionScene(mon, targetSpecies, TRUE, gPartyMenu.slotId);	// evolution
+            DestroyTask(taskId);						// I don't know why the task has to be destroyed ?
         }
-        else
+        else							// If item cannot be used.
         {
-            gPartyMenuUseExitCallback = FALSE;
-            DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
-            ScheduleBgCopyTilemapToVram(2);
-            gTasks[taskId].func = task;
+            gPartyMenuUseExitCallback = FALSE;				// I don't know what the exitcallback is.
+            DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);	// Now it really can't be used.
+            ScheduleBgCopyTilemapToVram(2);				// Something to do with going back to main screen?
+            gTasks[taskId].func = task;				// Task is not being destroyed this time!
         }
     }
-    else
+    else							// So if item CAN be used.
     {
-        sFinalLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);
-        gPartyMenuUseExitCallback = TRUE;
-        UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);
-        RemoveBagItem(gSpecialVar_ItemId, 1);
+        sFinalLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);		// Determine what the current level is ? It can be higher now after executetablebaseditemeffect.
+        gPartyMenuUseExitCallback = TRUE;				// This time it is true ? Maybe after a level up it goes back go items menu. 
+        UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);	// See function below. I think all health is animated to going to full health.
+        RemoveBagItem(gSpecialVar_ItemId, 1);				// use item.
         GetMonNickname(mon, gStringVar1);
-        if (sFinalLevel > sInitialLevel)
+        if (sFinalLevel > sInitialLevel)				// If level up.
         {
             PlayFanfareByFanfareNum(FANFARE_LEVEL_UP);
             if (holdEffectParam == 0) // Rare Candy
@@ -5229,17 +5229,17 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
 
             DisplayPartyMenuMessage(gStringVar4, TRUE);
             ScheduleBgCopyTilemapToVram(2);
-            gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;
+            gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;		// display the stats being higher.
         }
-        else
+        else								// if not level up.
         {
             PlaySE(SE_USE_ITEM);
-            gPartyMenuUseExitCallback = FALSE;
+            gPartyMenuUseExitCallback = FALSE;				// now it is false again.
             ConvertIntToDecimalStringN(gStringVar2, sExpCandyExperienceTable[holdEffectParam - 1], STR_CONV_MODE_LEFT_ALIGN, 6);
             StringExpandPlaceholders(gStringVar4, gText_PkmnGainedExp);
             DisplayPartyMenuMessage(gStringVar4, FALSE);
             ScheduleBgCopyTilemapToVram(2);
-            gTasks[taskId].func = task;
+            gTasks[taskId].func = task;				// input task passed through this time ?
         }
     }
 }

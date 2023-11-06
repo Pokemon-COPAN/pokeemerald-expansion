@@ -252,6 +252,7 @@ const u32 gItemIconPalette_YellowMint[] = INCBIN_U32("graphics/items/icon_palett
 // Candy
 
 const u32 gItemIcon_RareCandy[] = INCBIN_U32("graphics/items/icons/rare_candy.4bpp.lz");
+const u32 gItemIcon_CommonCandy[] = INCBIN_U32("graphics/items/icons/common_candy.4bpp.lz");
 const u32 gItemIconPalette_RareCandy[] = INCBIN_U32("graphics/items/icon_palettes/rare_candy.gbapal.lz");
 
 const u32 gItemIcon_ExpCandyXS[] = INCBIN_U32("graphics/items/icons/exp_candy_xs.4bpp.lz");

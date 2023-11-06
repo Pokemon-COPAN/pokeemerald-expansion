@@ -5910,7 +5910,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
                 if (dataUnsigned != 0) // Failsafe
                 {
-                    SetMonData(mon, MON_DATA_EXP, &dataUnsigned);
+                    SetMonData(mon, MON_DATA_EXP, &dataUnsigned); // pokemon goes level up.
                     CalculateMonStats(mon);
                     retVal = FALSE;
                 }

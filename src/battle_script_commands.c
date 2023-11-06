@@ -1259,6 +1259,7 @@ static const u16 sPickupItems[] =
     ITEM_ULTRA_BALL,
     ITEM_HYPER_POTION,
     ITEM_RARE_CANDY,
+    ITEM_COMMON_CANDY,
     ITEM_PROTEIN,
     ITEM_REVIVE,
     ITEM_HP_UP,

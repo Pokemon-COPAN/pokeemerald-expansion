@@ -7741,7 +7741,9 @@ extern const u32 gItemIconPalette_GreenMint[];
 extern const u32 gItemIconPalette_YellowMint[];
 // Candy
 extern const u32 gItemIcon_RareCandy[];
+extern const u32 gItemIcon_CommonCandy[];
 extern const u32 gItemIconPalette_RareCandy[];
+extern const u32 gItemIconPalette_CommonCandy[];
 extern const u32 gItemIcon_ExpCandyXS[];
 extern const u32 gItemIcon_ExpCandyS[];
 extern const u32 gItemIcon_ExpCandyM[];
