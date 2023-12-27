@@ -5921,8 +5921,23 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 }
             }
             // Common Candy
-            DebugPrintf("itemEffect[i]: %B",  itemEffect[i]);
-            DebugPrintf("ITEM3_LEVEL_DOWN: %B",  ITEM3_LEVEL_DOWN);
+            if (itemEffect[i] & ITEM3_LEVEL_DOWN)
+            {
+                DebugPrintf("itemEffect[i] & ITEM3_LEVEL_DOWN is true");
+            }
+            else
+            {
+                DebugPrintf("itemEffect[i] & ITEM3_LEVEL_DOWN is false");
+            }
+            if (GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL)
+            {
+                DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL is true");
+            }
+            else
+            {
+                DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL is false");
+            } 
+            
             if ((itemEffect[i] & ITEM3_LEVEL_DOWN)
              && GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL) 
             {
