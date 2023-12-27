@@ -290,6 +290,10 @@ const u8 gItemEffect_RareCandy[10] = {
     VITAMIN_FRIENDSHIP_CHANGE(7),
 };
 
+const u8 gItemEffect_CommonCandy[10] = {
+    [3] = ITEM3_LEVEL_DOWN,
+};
+
 const u8 gItemEffect_PPUp[9] = {
     [4] = ITEM4_PP_UP,
     [5] = ITEM5_FRIENDSHIP_ALL,
@@ -515,6 +519,7 @@ const u8 *const gItemEffectTable[] =
     [ITEM_EXP_CANDY_M - ITEM_POTION]      = gItemEffect_RareCandy,
     [ITEM_EXP_CANDY_L - ITEM_POTION]      = gItemEffect_RareCandy,
     [ITEM_EXP_CANDY_XL - ITEM_POTION]     = gItemEffect_RareCandy,
+    [ITEM_COMMON_CANDY - ITEM_POTION]     = gItemEffect_RareCandy,
     //[ITEM_DYNAMAX_CANDY - ITEM_POTION]    = gItemEffect_DynamaxCandy, // Todo
 
     // Medicinal Flutes

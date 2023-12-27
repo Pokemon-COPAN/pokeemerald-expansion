@@ -5733,6 +5733,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     s8 evChange;
     u16 evCount;
 
+    DebugPrintf("inside pokemon use item function in pokemon.c");
+
     // Get item hold effect
     heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, NULL);
     if (heldItem == ITEM_ENIGMA_BERRY_E_READER)
@@ -5770,6 +5772,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     }
 
     // Skip using the item if it won't do anything
+    DebugPrintf("does it do something?");
     if (!ITEM_HAS_EFFECT(item))
         return TRUE;
     if (gItemEffectTable[item - ITEM_POTION] == NULL && item != ITEM_ENIGMA_BERRY_E_READER)
@@ -5789,6 +5792,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     }
 
     // Do item effect
+    DebugPrintf("Do item effect");
     for (i = 0; i < ITEM_EFFECT_ARG_START; i++)
     {
         switch (i)
@@ -5881,6 +5885,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
         // Handle ITEM3 effects (Guard Spec, Rare Candy, cure status)
         case 3:
+            DebugPrintf("case 3");
             // Guard Spec
             if ((itemEffect[i] & ITEM3_GUARD_SPEC)
              && gSideTimers[GetBattlerSide(gActiveBattler)].mistTimer == 0)
@@ -5888,10 +5893,10 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 gSideTimers[GetBattlerSide(gActiveBattler)].mistTimer = 5;
                 retVal = FALSE;
             }
-
+            
             // Rare Candy / EXP Candy
             if ((itemEffect[i] & ITEM3_LEVEL_UP)
-             && GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL)
+             && GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL) 
             {
                 u8 param = ItemId_GetHoldEffectParam(item);
                 dataUnsigned = 0;
@@ -5915,7 +5920,18 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                     retVal = FALSE;
                 }
             }
-
+            // Common Candy
+            DebugPrintf("itemEffect[i]: %B",  itemEffect[i]);
+            DebugPrintf("ITEM3_LEVEL_DOWN: %B",  ITEM3_LEVEL_DOWN);
+            if ((itemEffect[i] & ITEM3_LEVEL_DOWN)
+             && GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL) 
+            {
+                DebugPrintf("inside common candy effect");
+                dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) - 1];
+                SetMonData(mon, MON_DATA_EXP, &dataUnsigned); // pokemon goes level down.
+                CalculateMonStats(mon);
+                retVal = FALSE;
+            } 
             // Cure status
             if ((itemEffect[i] & ITEM3_SLEEP)
              && HealStatusConditions(mon, partyIndex, STATUS1_SLEEP, battlerId) == 0)

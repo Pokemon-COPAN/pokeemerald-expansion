@@ -936,6 +936,8 @@
 
 // Copan items start here:
 #define ITEM_COMMON_CANDY 763
+#define COPAN_ITEMS_WITH_EFFECT_INDEX ITEM_COMMON_CANDY
+
 
 
 #define ITEMS_COUNT 764 
@@ -1006,6 +1008,6 @@
 #define ITEM_B_USE_OTHER    2
 
 // Check if the item is one that can be used on a Pokemon.
-#define ITEM_HAS_EFFECT(item) ((item) >= ITEM_POTION && (item) <= LAST_BERRY_INDEX)
+#define ITEM_HAS_EFFECT(item) (((item) >= ITEM_POTION && (item) <= LAST_BERRY_INDEX) || (item) >= COPAN_ITEMS_WITH_EFFECT_INDEX)
 
 #endif  // GUARD_CONSTANTS_ITEMS_H

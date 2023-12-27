@@ -5167,10 +5167,27 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     u8 holdEffectParam = ItemId_GetHoldEffectParam(*itemPtr);	// Every item has a specific holdeffectparam, sometimes it's 0.
 
     sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
-    if (sInitialLevel != MAX_LEVEL)				// If not level 100
+
+    // Common candy effects
+    if (holdEffectParam == 1) // If common candy
+    {
+        DebugPrintf("this is a common candy");
+        if (sInitialLevel != MIN_LEVEL)				// If not level 1
+        {
+            DebugPrintf("not level 1!");
+            BufferMonStatsToTaskData(mon, arrayPtr);						// Buffer mon stats to first pointer
+            cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0); 	// Presumably correctly applies common candy?
+            BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);					// I don't know what NUM_STATS is.
+        }
+        else
+        {
+            cannotUseEffect = TRUE;                 // Cannot use item if level 1.
+        }
+    }
+    if ((sInitialLevel != MAX_LEVEL) && holdEffectParam != 1)			// If not level 100
     {
         BufferMonStatsToTaskData(mon, arrayPtr);						// Buffer mon stats to first pointer
-        cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0); 	// Determine if item cannot be used, and I also updates pokemon MON_DATA_EXP, and cures status. 
+        cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0); 	// Determine if item cannot be used, and I also updates pokemon MON_DATA_EXP, and cures status.
         BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);					// I don't know what NUM_STATS is.
     }
     else
