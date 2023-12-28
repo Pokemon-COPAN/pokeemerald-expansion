@@ -11805,47 +11805,47 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Jeroen[] = {
+static const struct TrainerMon sParty_Jeroen[] = {
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 13,
     .species = SPECIES_NOSEPASS,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_THUNDER_WAVE, MOVE_ROCK_TOMB, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 12,
     .species = SPECIES_LILEEP,
-    .heldItem = GRIP_CLAW,
+    .heldItem = ITEM_GRIP_CLAW,
     .moves = {MOVE_INGRAIN, MOVE_WRAP, MOVE_ASTONISH, MOVE_CONFUSE_RAY}
     },
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 12,
     .species = SPECIES_GEODUDE_ALOLAN,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_CHARGE, MOVE_SPARK, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 12,
     .species = SPECIES_OMANYTE,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 12,
     .species = SPECIES_UNOWN,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ANCIENT_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = 0,
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
     .lvl = 14,
     .species = SPECIES_ANORITH,
-    .heldItem = ITEM_ORAN_BERRY_BERRY,
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_FURY_CUTTER, MOVE_ROCK_TOMB, MOVE_CUT, MOVE_NONE}
     }
 };
