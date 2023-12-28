@@ -82,13 +82,14 @@ Some tips before proceeding:
 4. Certain packages are required to build pokeemerald. Install these packages by running the following command:
 
     ```bash
-    sudo apt install build-essential binutils-arm-none-eabi git libpng-dev
+    sudo apt install build-essential binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi git libpng-dev
     ```
     <details>
         <summary><i>Note...</i></summary>
 
     >   If the above command does not work, try the above command but replacing `apt` with `apt-get`.
     </details>
+    This will install GCC v10 on Ubuntu 22.04. pokeemerald-expansion works with GCC v10, but remote repositories and the RHH Team use GCC v13 for stricter error-checking. If you want to upgrade from v10 to v13, also follow the devkitpro install instructions.
 
 ### Choosing where to store pokeemerald (WSL1)
 WSL has its own file system that's not natively accessible from Windows, but Windows files *are* accessible from WSL. So you're going to want to store pokeemerald within Windows.
@@ -125,18 +126,52 @@ Otherwise, ask for help on Discord or IRC (see [README.md](README.md)), or conti
 
 Note that in msys2, Copy is Ctrl+Insert and Paste is Shift+Insert.
 
-1. Open msys2 at C:\devkitPro\msys2\mingw64.exe or run `C:\devkitPro\msys2\msys2_shell.bat -mingw64`.
+1. Open msys2 at C:\devkitPro\msys2\msys2_shell.bat.
 
-2. Certain packages are required to build pokeemerald. Install these by running the following command:
+2. Certain packages are required to build pokeemerald. Install these by running the following two commands:
 
     ```bash
-    pacman -S make zlib-devel git mingw-w64-x86_64-gcc mingw-w64-x86_64-libpng
+    pacman -Sy msys2-keyring
+    pacman -S make gcc zlib-devel git
     ```
     <details>
         <summary><i>Note...</i></summary>
 
-    >   This command will ask for confirmation, just enter the yes action when prompted.
+    >   The commands will ask for confirmation, just enter the yes action when prompted.
     </details>
+
+3. Download [libpng](https://sourceforge.net/projects/libpng/files/libpng16/1.6.37/libpng-1.6.37.tar.xz/download).
+
+4. Change directory to where libpng was downloaded. By default, msys2 will start in the current user's profile folder, located at **C:\Users\\&#8288;_\<user>_**, where *\<user>* is your Windows username. In most cases, libpng should be saved within a subfolder of the profile folder. For example, if libpng was saved to **C:\Users\\_\<user>_\Downloads** (the Downloads location for most users), enter this command:
+
+    ```bash
+    cd Downloads
+    ```
+
+    <details>
+        <summary><i>Notes...</i></summary>
+
+    >   Note 1: While not shown, msys uses forward slashes `/` instead of backwards slashes `\` as the directory separator.
+    >   Note 2: If the path has spaces, then the path must be wrapped with quotations, e.g. `cd "Downloads/My Downloads"`.
+    >   Note 3: Windows path names are case-insensitive so adhering to capitalization isn’t needed.
+    >   Note 4: If libpng was saved elsewhere, you will need to specify the full path to where libpng was downloaded, e.g. `cd c:/devkitpro/msys2` if it was saved there.
+    </details>
+
+5. Run the following commands to uncompress and install libpng.
+
+    ```bash
+    tar xf libpng-1.6.37.tar.xz
+    cd libpng-1.6.37
+    ./configure --prefix=/usr
+    make check
+    make install
+    ```
+
+6. Then finally, run the following command to change back to the user profile folder.
+
+    ```bash
+    cd
+    ```
 
 ### Choosing where to store pokeemerald (msys2)
 At this point, you can choose a folder to store pokeemerald into. If you're okay with storing pokeemerald in the user profile folder, then proceed to [Installation](#installation). Otherwise, you'll need to account for where pokeemerald is stored when changing directory to the pokeemerald folder.
@@ -295,28 +330,28 @@ Open Terminal and enter the following commands, depending on which distro you're
 ### Debian/Ubuntu-based distributions
 Run the following command to install the necessary packages:
 ```bash
-sudo apt install build-essential binutils-arm-none-eabi git libpng-dev
+sudo apt install build-essential binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi git libpng-dev
 ```
 Then proceed to [Choosing where to store pokeemerald (Linux)](#choosing-where-to-store-pokeemerald-linux).
 <details>
     <summary><i>Note for legacy repos...</i></summary>
 
 >   If the repository you plan to build has an **[older revision of the INSTALL.md](https://github.com/pret/pokeemerald/blob/571c598/INSTALL.md)**,
->   then you will have to install devkitARM. Install all the above packages except binutils-arm-none-eabi, and follow the instructions to
+>   then you will have to install devkitARM. Install all the above packages except for the arm-none-eabi packages, and follow the instructions to
 >   [install devkitARM on Debian/Ubuntu-based distributions](#installing-devkitarm-on-debianubuntu-based-distributions).
 </details>
 
 ### Arch Linux
 Run this command as root to install the necessary packages:
 ```bash
-pacman -S base-devel arm-none-eabi-binutils git libpng
+pacman -S base-devel arm-none-eabi-binutils arm-none-eabi-gcc arm-none-eabi-newlib git libpng
 ```
 Then proceed to [Choosing where to store pokeemerald (Linux)](#choosing-where-to-store-pokeemerald-linux).
 <details>
     <summary><i>Note for legacy repos...</i></summary>
 
 >   If the repository you plan to build has an **[older revision of the INSTALL.md](https://github.com/pret/pokeemerald/blob/571c598/INSTALL.md)**,
->   then you will have to install devkitARM. Install all the above packages except binutils-arm-none-eabi, and follow the instructions to
+>   then you will have to install devkitARM. Install all the above packages except for the arm-none-eabi packages, and follow the instructions to
 >   [install devkitARM on Arch Linux](#installing-devkitarm-on-arch-linux).
 </details>
 
@@ -374,6 +409,8 @@ If this works, then proceed to [Installation](#installation). Otherwise, ask for
     >   Where *\<folder where pokeemerald is to be stored>* is the path of the folder [where you chose to store pokeemerald](#Choosing-where-to-store-pokeemerald-WSL1). Then run the `git clone` command again.
     </details>
 
+<details>
+    <summary><i>Depreciated; installing agbcc is optional since 1.7.0</i>.</summary>
 2. Install agbcc into pokeemerald. The commands to run depend on certain conditions. **You should only follow one of the listed instructions**:
 - If agbcc has **not been built before** in the folder where you chose to store pokeemerald, run the following commands to build and install it into pokeemerald:
 
@@ -411,6 +448,7 @@ If this works, then proceed to [Installation](#installation). Otherwise, ask for
     ```bash
     cd ..
     ```
+</details>
 
 Now you're ready to [build **pokeemerald**](#build-pokeemerald)
 ## Build pokeemerald
