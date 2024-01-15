@@ -11846,7 +11846,7 @@ static const struct TrainerMon sParty_Jeroen[] = {
     .lvl = 14,
     .species = SPECIES_ANORITH,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TWIN_NEEDLE, MOVE_ROCK_TOMB, MOVE_CUT, MOVE_NONE}
+    .moves = {MOVE_TWINEEDLE, MOVE_ROCK_TOMB, MOVE_CUT, MOVE_NONE}
     }
 };
 
