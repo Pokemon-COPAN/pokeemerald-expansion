@@ -5819,6 +5819,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
         // Handle ITEM1 effects (in-battle stat boosting effects)
         case 1:
+            DebugPrintf("case 1");
             // X Attack
             if ((itemEffect[i] & ITEM1_X_ATTACK)
              && gBattleMons[gActiveBattler].statStages[STAT_ATK] < MAX_STAT_STAGE)
@@ -5921,7 +5922,9 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 }
             }
             // Common Candy
-            if (itemEffect[i] & ITEM3_LEVEL_DOWN)
+            DebugPrintf("ITEM1_LEVEL_DOWN: %u", ITEM1_LEVEL_DOWN);
+            DebugPrintf("itemEffect[i]: %u", itemEffect[i]);
+            if (itemEffect[i] & ITEM1_LEVEL_DOWN)
             {
                 DebugPrintf("itemEffect[i] & ITEM3_LEVEL_DOWN is true");
             }
@@ -5938,7 +5941,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL is false");
             } 
             
-            if ((itemEffect[i] & ITEM3_LEVEL_DOWN)
+            if ((itemEffect[i] & ITEM1_LEVEL_DOWN)
              && GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL) 
             {
                 DebugPrintf("inside common candy effect");

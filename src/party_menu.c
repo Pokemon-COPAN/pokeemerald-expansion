@@ -5195,10 +5195,11 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         cannotUseEffect = TRUE;				// Cannot use item if level 100.
     }
     PlaySE(SE_SELECT);						// Sound effect
+    DebugPrintf("checking cannotUseEffect");
     if (cannotUseEffect)					// if item (rarecandy/expcandy) cannot be used:
     {
         u16 targetSpecies = SPECIES_NONE;
-
+        DebugPrintf("True"); // THIS IS TRUE BECAUSE OF THE IF NOT LEVEL 100 STEP I THINK
         // Resets values to 0 so other means of teaching moves doesn't overwrite levels
         sInitialLevel = 0; 					// I don't understand why!
         sFinalLevel = 0;
@@ -5224,6 +5225,7 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     }
     else							// So if item CAN be used.
     {
+        DebugPrintf("False!");
         sFinalLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);		// Determine what the current level is ? It can be higher now after executetablebaseditemeffect.
         gPartyMenuUseExitCallback = TRUE;				// This time it is true ? Maybe after a level up it goes back go items menu. 
         UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);	// See function below. I think all health is animated to going to full health.

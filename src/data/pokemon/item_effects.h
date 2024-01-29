@@ -291,7 +291,7 @@ const u8 gItemEffect_RareCandy[10] = {
 };
 
 const u8 gItemEffect_CommonCandy[10] = {
-    [3] = ITEM3_LEVEL_DOWN,
+    [1] = ITEM1_LEVEL_DOWN,
 };
 
 const u8 gItemEffect_PPUp[9] = {
