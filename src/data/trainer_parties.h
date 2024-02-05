@@ -11808,44 +11808,90 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
 static const struct TrainerMon sParty_Jeroen[] = {
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 13,
+    .lvl = 10,
     .species = SPECIES_NOSEPASS,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_THUNDER_WAVE, MOVE_ROCK_TOMB, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_THUNDER_WAVE, MOVE_ROCK_TOMB, MOVE_HARDEN, MOVE_TACKLE}
     },
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 12,
+    .lvl = 10,
     .species = SPECIES_LILEEP,
     .heldItem = ITEM_GRIP_CLAW,
     .moves = {MOVE_INGRAIN, MOVE_WRAP, MOVE_ASTONISH, MOVE_CONFUSE_RAY}
     },
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 12,
+    .lvl = 10,
     .species = SPECIES_GEODUDE_ALOLAN,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_CHARGE, MOVE_SPARK, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_CHARGE, MOVE_SPARK, MOVE_ROCK_POLISH, MOVE_NONE}
     },
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 12,
+    .lvl = 10,
     .species = SPECIES_OMANYTE,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 12,
+    .lvl = 10,
     .species = SPECIES_UNOWN,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ANCIENT_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-    .lvl = 14,
+    .lvl = 10,
     .species = SPECIES_ANORITH,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_FURY_CUTTER, MOVE_ROCK_TOMB, MOVE_CUT, MOVE_NONE}
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TWINEEDLE, MOVE_ROCK_TOMB, MOVE_CUT, MOVE_NONE}
     }
 };
+
+static const struct TrainerMon sParty_Rein[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 10,
+    .species = SPECIES_MAWILE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_ASTONISH, MOVE_BITE, MOVE_FAIRY_WIND, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 10,
+    .species = SPECIES_BEAUTIFLY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_GUST, MOVE_ABSORB, MOVE_LICK, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 10,
+    .species = SPECIES_MURKROW,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_PECK, MOVE_ASTONISH, MOVE_SNARL, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 10,
+    .species = SPECIES_EEVEE,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_TICKLE, MOVE_TACKLE, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 10,
+    .species = SPECIES_MANKEY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_LOW_KICK, MOVE_FURY_SWIPES, MOVE_COVET, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+    .lvl = 10,
+    .species = SPECIES_BAGON,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_DRAGON_BREATH, MOVE_BITE, MOVE_EMBER, MOVE_NONE}
+    }
+};
+
