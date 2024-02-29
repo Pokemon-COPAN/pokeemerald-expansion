@@ -1072,3 +1072,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Sandbox_Gym/scripts.inc"
 	.include "data/maps/Sandbox_Town/scripts.inc"
 
+
+	.include "data/maps/IslandviewTown/scripts.inc"
+
+	.include "data/maps/CopanRoute101/scripts.inc"

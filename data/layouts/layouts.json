@@ -4450,6 +4450,26 @@
       "secondary_tileset": "gTileset_MauvilleGym",
       "border_filepath": "data/layouts/Sandbox_Gym/border.bin",
       "blockdata_filepath": "data/layouts/Sandbox_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ISLANDVIEW_TOWN",
+      "name": "IslandviewTown_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IslandHarbor",
+      "border_filepath": "data/layouts/IslandviewTown/border.bin",
+      "blockdata_filepath": "data/layouts/IslandviewTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_COPAN_ROUTE101",
+      "name": "CopanRoute101_Layout",
+      "width": 20,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IslandHarbor",
+      "border_filepath": "data/layouts/CopanRoute101/border.bin",
+      "blockdata_filepath": "data/layouts/CopanRoute101/map.bin"
     }
   ]
 }

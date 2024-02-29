@@ -592,8 +592,10 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // gMapGroup_CopanRoutesTowns
-#define MAP_COPAN_HOUSE  (0 | (34 << 8))
-#define MAP_SANDBOX_TOWN (1 | (34 << 8))
+#define MAP_COPAN_HOUSE     (0 | (34 << 8))
+#define MAP_SANDBOX_TOWN    (1 | (34 << 8))
+#define MAP_ISLANDVIEW_TOWN (2 | (34 << 8))
+#define MAP_COPAN_ROUTE101  (3 | (34 << 8))
 
 // gMapGroup_CopanIndoor
 #define MAP_COPAN_LAB   (0 | (35 << 8))

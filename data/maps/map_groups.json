@@ -1,5 +1,4 @@
 {
-  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
@@ -626,7 +625,9 @@
   ],
   "gMapGroup_CopanRoutesTowns": [
     "CopanHouse",
-    "Sandbox_Town"
+    "Sandbox_Town",
+    "IslandviewTown",
+    "CopanRoute101"
   ],
   "gMapGroup_CopanIndoor": [
     "CopanLab",
