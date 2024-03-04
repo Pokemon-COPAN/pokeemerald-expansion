@@ -5896,6 +5896,25 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
             }
             
             // Rare Candy / EXP Candy
+            DebugPrintf("Rare Candy / EXP Candy");
+            DebugPrintf("ITEM3_LEVEL_UP: %u", ITEM3_LEVEL_UP);
+            DebugPrintf("itemEffect[i]: %u", itemEffect[i]);
+            if (itemEffect[i] & ITEM3_LEVEL_UP)
+            {
+                DebugPrintf("itemEffect[i] & ITEM3_LEVEL_UP is true");
+            }
+            else
+            {
+                DebugPrintf("itemEffect[i] & ITEM3_LEVEL_UP is false");
+            }
+            if (GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL)
+            {
+                DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL is true");
+            }
+            else
+            {
+                DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL is false");
+            } 
             if ((itemEffect[i] & ITEM3_LEVEL_UP)
              && GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL) 
             {
@@ -5904,8 +5923,16 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
                 if (param == 0) // Rare Candy
                 {
+                    DebugPrintf("I understand this is a Rare Candy and am applying level up");
                     dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) + 1];
                 }
+                if (param == 1) // Common Candy
+                {
+                    DebugPrintf("I understand this is a Common Candy");
+                    dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) - 1];
+                }
+                
+                
                 else if (param - 1 < ARRAY_COUNT(sExpCandyExperienceTable)) // EXP Candies
                 {
                     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
@@ -5922,34 +5949,35 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 }
             }
             // Common Candy
-            DebugPrintf("ITEM1_LEVEL_DOWN: %u", ITEM1_LEVEL_DOWN);
-            DebugPrintf("itemEffect[i]: %u", itemEffect[i]);
-            if (itemEffect[i] & ITEM1_LEVEL_DOWN)
-            {
-                DebugPrintf("itemEffect[i] & ITEM3_LEVEL_DOWN is true");
-            }
-            else
-            {
-                DebugPrintf("itemEffect[i] & ITEM3_LEVEL_DOWN is false");
-            }
-            if (GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL)
-            {
-                DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL is true");
-            }
-            else
-            {
-                DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL is false");
-            } 
-            
-            if ((itemEffect[i] & ITEM1_LEVEL_DOWN)
-             && GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL) 
-            {
-                DebugPrintf("inside common candy effect");
-                dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) - 1];
-                SetMonData(mon, MON_DATA_EXP, &dataUnsigned); // pokemon goes level down.
-                CalculateMonStats(mon);
-                retVal = FALSE;
-            } 
+            //DebugPrintf("Common Candy");
+            //DebugPrintf("ITEM1_LEVEL_DOWN: %u", ITEM1_LEVEL_DOWN);
+            //DebugPrintf("itemEffect[i]: %u", itemEffect[i]);
+            //if (itemEffect[i] & ITEM1_LEVEL_DOWN)
+            //{
+            //    DebugPrintf("itemEffect[i] & ITEM1_LEVEL_DOWN is true");
+            //}
+            //else
+            //{
+            //    DebugPrintf("itemEffect[i] & ITEM1_LEVEL_DOWN is false");
+            //}
+            //if (GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL)
+            //{
+            //    DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL is true");
+            //}
+            //else
+            //{
+            //    DebugPrintf("GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL is false");
+            //} 
+            //
+            //if ((itemEffect[i] & ITEM1_LEVEL_DOWN)
+            // && GetMonData(mon, MON_DATA_LEVEL, NULL) > MIN_LEVEL) 
+            //{
+            //    DebugPrintf("inside common candy effect");
+            //    dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) - 1];
+            //    SetMonData(mon, MON_DATA_EXP, &dataUnsigned); // pokemon goes level down.
+            //    CalculateMonStats(mon);
+            //    retVal = FALSE;
+            //} 
             // Cure status
             if ((itemEffect[i] & ITEM3_SLEEP)
              && HealStatusConditions(mon, partyIndex, STATUS1_SLEEP, battlerId) == 0)

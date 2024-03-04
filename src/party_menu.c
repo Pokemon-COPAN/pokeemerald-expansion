@@ -5168,23 +5168,14 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
 
     sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
 
-    // Common candy effects
-    if (holdEffectParam == 1) // If common candy
+    if ((sInitialLevel != MIN_LEVEL) && holdEffectParam == 1) // If Common Candy
     {
-        DebugPrintf("this is a common candy");
-        if (sInitialLevel != MIN_LEVEL)				// If not level 1
-        {
-            DebugPrintf("not level 1!");
-            BufferMonStatsToTaskData(mon, arrayPtr);						// Buffer mon stats to first pointer
-            cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0); 	// Presumably correctly applies common candy?
-            BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);					// I don't know what NUM_STATS is.
-        }
-        else
-        {
-            cannotUseEffect = TRUE;                 // Cannot use item if level 1.
-        }
+        DebugPrintf("ready to use a common candy");
+        BufferMonStatsToTaskData(mon, arrayPtr);						// Buffer mon stats to first pointer
+        cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0); 	// Presumably correctly applies common candy?
+        BufferMonStatsToTaskData(mon, &ptr->data[NUM_STATS]);					// I don't know what NUM_STATS is.
     }
-    if ((sInitialLevel != MAX_LEVEL) && holdEffectParam != 1)			// If not level 100
+    else if ((sInitialLevel != MAX_LEVEL) && holdEffectParam != 1) // If Rare Candy
     {
         BufferMonStatsToTaskData(mon, arrayPtr);						// Buffer mon stats to first pointer
         cannotUseEffect = ExecuteTableBasedItemEffect_(gPartyMenu.slotId, *itemPtr, 0); 	// Determine if item cannot be used, and I also updates pokemon MON_DATA_EXP, and cures status.
@@ -5231,7 +5222,7 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);	// See function below. I think all health is animated to going to full health.
         RemoveBagItem(gSpecialVar_ItemId, 1);				// use item.
         GetMonNickname(mon, gStringVar1);
-        if (sFinalLevel > sInitialLevel)				// If level up.
+        if (sFinalLevel != sInitialLevel)     			// If level altered.
         {
             PlayFanfareByFanfareNum(FANFARE_LEVEL_UP);
             if (holdEffectParam == 0) // Rare Candy
@@ -5239,20 +5230,28 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
                 ConvertIntToDecimalStringN(gStringVar2, sFinalLevel, STR_CONV_MODE_LEFT_ALIGN, 3);
                 StringExpandPlaceholders(gStringVar4, gText_PkmnElevatedToLvVar2);
             }
+            else if (holdEffectParam == 1) // Common Candy
+            {
+                ConvertIntToDecimalStringN(gStringVar2, sFinalLevel, STR_CONV_MODE_LEFT_ALIGN, 3);
+                StringExpandPlaceholders(gStringVar4, gText_PkmnLoweredToLvVar2);
+            }
             else // Exp Candies
             {
+                DebugPrintf("exp candies");
                 ConvertIntToDecimalStringN(gStringVar2, sExpCandyExperienceTable[holdEffectParam - 1], STR_CONV_MODE_LEFT_ALIGN, 6);
                 ConvertIntToDecimalStringN(gStringVar3, sFinalLevel, STR_CONV_MODE_LEFT_ALIGN, 3);
                 StringExpandPlaceholders(gStringVar4, gText_PkmnGainedExpAndElevatedToLvVar3);
             }
-
+            DebugPrintf("finishing tasks");
             DisplayPartyMenuMessage(gStringVar4, TRUE);
             ScheduleBgCopyTilemapToVram(2);
             gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;		// display the stats being higher.
+            DebugPrintf("levelup task finished");
         }
         else								// if not level up.
         {
             PlaySE(SE_USE_ITEM);
+            DebugPrintf("oh call back will be false then");
             gPartyMenuUseExitCallback = FALSE;				// now it is false again.
             ConvertIntToDecimalStringN(gStringVar2, sExpCandyExperienceTable[holdEffectParam - 1], STR_CONV_MODE_LEFT_ALIGN, 6);
             StringExpandPlaceholders(gStringVar4, gText_PkmnGainedExp);

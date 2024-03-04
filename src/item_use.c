@@ -793,6 +793,7 @@ void ItemUseOutOfBattle_PPUp(u8 taskId)
 void ItemUseOutOfBattle_RareCandy(u8 taskId)
 {
     gItemUseCB = ItemUseCB_RareCandy;
+    DebugPrintf("exit ItemUseCB_RareCandy done. taskId: %d", taskId); 
     SetUpItemUseCallback(taskId);
 }
 

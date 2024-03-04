@@ -13,7 +13,7 @@
 #define ITEM1_X_SPATK           0x8
 #define ITEM1_X_SPDEF           0x10
 #define ITEM1_X_ACCURACY        0x20
-#define ITEM1_LEVEL_DOWN        0x40
+#define ITEM1_LEVEL_DOWN        0x80
 
 // field 3 masks
 #define ITEM3_CONFUSION         0x1
