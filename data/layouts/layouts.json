@@ -4417,7 +4417,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lab",
+      "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/CopanHouse/border.bin",
       "blockdata_filepath": "data/layouts/CopanHouse/map.bin"
     },
