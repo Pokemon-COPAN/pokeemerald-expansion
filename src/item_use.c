@@ -109,7 +109,9 @@ static void SetUpItemUseCallback(u8 taskId)
         type = ItemId_GetType(gSpecialVar_ItemId) - 1;
     if (!InBattlePyramid())
     {
+        DebugPrintf("gBagMenu->newScreenCallback = sItemUseCallbacks[%u]", type);
         gBagMenu->newScreenCallback = sItemUseCallbacks[type];
+        DebugPrintf("Task_FadeAndCloseBagMenu(%u)", taskId);
         Task_FadeAndCloseBagMenu(taskId);
     }
     else

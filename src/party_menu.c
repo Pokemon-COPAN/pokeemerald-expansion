@@ -1265,6 +1265,8 @@ void Task_HandleChooseMonInput(u8 taskId)
         {
         case A_BUTTON: // Selected mon
             HandleChooseMonSelection(taskId, slotPtr);
+            DebugPrintf("HandleCHooseMonSelection successfully finished");
+            DebugPrintf("I am curious about the state of gPartyMenuUseExitCallback: %d", gPartyMenuUseExitCallback);
             break;
         case B_BUTTON: // Selected Cancel / pressed B
             HandleChooseMonCancel(taskId, slotPtr);
@@ -1312,7 +1314,9 @@ static void HandleChooseMonSelection(u8 taskId, s8 *slotPtr)
                     sPartyMenuInternal->exitCallback = CB2_SetUpExitToBattleScreen;
 
                 PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+                DebugPrintf("gItemUseCB(%u, Task_ClosePartyMenuAfterText);", taskId); 
                 gItemUseCB(taskId, Task_ClosePartyMenuAfterText);
+                DebugPrintf("gItemUseCB successfully finished"); 
             }
             break;
         case PARTY_ACTION_MOVE_TUTOR:
@@ -4257,17 +4261,22 @@ void CB2_ShowPartyMenuForItemUse(void)
             msgId = PARTY_MSG_USE_ON_WHICH_MON;
 
         task = Task_HandleChooseMonInput;
+
     }
 
     InitPartyMenu(menuType, partyLayout, PARTY_ACTION_USE_ITEM, TRUE, msgId, task, callback);
+    DebugPrintf("InitPartyMenu finished");
 }
 
 static void CB2_ReturnToBagMenu(void)
 {
     if (InBattlePyramid() == FALSE)
         GoToBagMenu(ITEMMENULOCATION_LAST, POCKETS_COUNT, NULL);
+
     else
         GoToBattlePyramidBagMenu(PYRAMIDBAG_LOC_PREV, gPyramidBagMenuState.exitCallback);
+
+    DebugPrintf("successfully returned to bagmenu!");
 }
 
 static void Task_SetSacredAshCB(u8 taskId)
