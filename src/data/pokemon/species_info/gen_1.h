@@ -5693,10 +5693,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #define PONYTA_MISC_INFO                                \
         .baseHP        = 50,                            \
-        .baseAttack    = 85,                            \
+        .baseAttack    = 65,                            \
         .baseDefense   = 55,                            \
         .baseSpeed     = 90,                            \
-        .baseSpAttack  = 65,                            \
+        .baseSpAttack  = 85,                            \
         .baseSpDefense = 65,                            \
         .catchRate = 190,                               \
         .expYield = 82,                                 \
@@ -5710,10 +5710,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #define RAPIDASH_MISC_INFO                                  \
         .baseHP        = 65,                                \
-        .baseAttack    = 100,                               \
+        .baseAttack    = 80,                               \
         .baseDefense   = 70,                                \
         .baseSpeed     = 105,                               \
-        .baseSpAttack  = 80,                                \
+        .baseSpAttack  = 100,                                \
         .baseSpDefense = 80,                                \
         .catchRate = 60,                                    \
         .expYield = 175,                                    \

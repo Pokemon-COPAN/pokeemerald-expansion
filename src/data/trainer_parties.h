@@ -11863,7 +11863,7 @@ static const struct TrainerMon sParty_Rein[] = {
     .lvl = 13,
     .species = SPECIES_EEVEE,
     .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_DOUBLE_KICK, MOVE_TICKLE, MOVE_TACKLE, MOVE_HEADBUTT}
+    .moves = {MOVE_DOUBLE_KICK, MOVE_TICKLE, MOVE_MUD_SLAP, MOVE_HEADBUTT}
     },
     {
     .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
