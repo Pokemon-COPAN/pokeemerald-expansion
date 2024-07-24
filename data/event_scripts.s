@@ -1076,3 +1076,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IslandviewTown/scripts.inc"
 
 	.include "data/maps/CopanRoute101/scripts.inc"
+
+	.include "data/maps/Sunset_Pond/scripts.inc"
+
+	.include "data/maps/Harbor_Town/scripts.inc"
+
+	.include "data/maps/CopanRoute102/scripts.inc"
+
+	.include "data/maps/Nuggy_Pass/scripts.inc"
+
+	.include "data/maps/Gym_Town/scripts.inc"

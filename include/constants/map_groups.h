@@ -596,6 +596,11 @@
 #define MAP_SANDBOX_TOWN    (1 | (34 << 8))
 #define MAP_ISLANDVIEW_TOWN (2 | (34 << 8))
 #define MAP_COPAN_ROUTE101  (3 | (34 << 8))
+#define MAP_SUNSET_POND     (4 | (34 << 8))
+#define MAP_HARBOR_TOWN     (5 | (34 << 8))
+#define MAP_COPAN_ROUTE102  (6 | (34 << 8))
+#define MAP_NUGGY_PASS      (7 | (34 << 8))
+#define MAP_GYM_TOWN        (8 | (34 << 8))
 
 // gMapGroup_CopanIndoor
 #define MAP_COPAN_LAB   (0 | (35 << 8))

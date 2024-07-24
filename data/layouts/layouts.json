@@ -4470,6 +4470,56 @@
       "secondary_tileset": "gTileset_IslandHarbor",
       "border_filepath": "data/layouts/CopanRoute101/border.bin",
       "blockdata_filepath": "data/layouts/CopanRoute101/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNSET_POND",
+      "name": "Sunset_Pond_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Sunset_Pond/border.bin",
+      "blockdata_filepath": "data/layouts/Sunset_Pond/map.bin"
+    },
+    {
+      "id": "LAYOUT_HARBOR_TOWN",
+      "name": "Harbor_Town_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Harbor_Town/border.bin",
+      "blockdata_filepath": "data/layouts/Harbor_Town/map.bin"
+    },
+    {
+      "id": "LAYOUT_COPAN_ROUTE102",
+      "name": "CopanRoute102_Layout",
+      "width": 20,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CopanRoute102/border.bin",
+      "blockdata_filepath": "data/layouts/CopanRoute102/map.bin"
+    },
+    {
+      "id": "LAYOUT_NUGGY_PASS",
+      "name": "Nuggy_Pass_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Nuggy_Pass/border.bin",
+      "blockdata_filepath": "data/layouts/Nuggy_Pass/map.bin"
+    },
+    {
+      "id": "LAYOUT_GYM_TOWN",
+      "name": "Gym_Town_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Gym_Town/border.bin",
+      "blockdata_filepath": "data/layouts/Gym_Town/map.bin"
     }
   ]
 }

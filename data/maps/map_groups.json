@@ -627,7 +627,12 @@
     "CopanHouse",
     "Sandbox_Town",
     "IslandviewTown",
-    "CopanRoute101"
+    "CopanRoute101",
+    "Sunset_Pond",
+    "Harbor_Town",
+    "CopanRoute102",
+    "Nuggy_Pass",
+    "Gym_Town"
   ],
   "gMapGroup_CopanIndoor": [
     "CopanLab",
