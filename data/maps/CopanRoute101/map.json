@@ -17,6 +17,11 @@
       "map": "MAP_ISLANDVIEW_TOWN",
       "offset": 30,
       "direction": "left"
+    },
+    {
+      "map": "MAP_HARBOR_TOWN",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
