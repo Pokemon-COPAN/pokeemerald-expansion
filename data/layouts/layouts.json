@@ -4497,7 +4497,7 @@
       "width": 20,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CopanRoute102/border.bin",
       "blockdata_filepath": "data/layouts/CopanRoute102/map.bin"
     },
