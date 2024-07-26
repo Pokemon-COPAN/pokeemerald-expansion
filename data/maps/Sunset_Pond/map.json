@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_COPAN_ROUTE102",
-      "offset": 0,
+      "offset": -60,
       "direction": "left"
     }
   ],
