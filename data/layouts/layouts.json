@@ -4514,10 +4514,10 @@
     {
       "id": "LAYOUT_GYM_TOWN",
       "name": "Gym_Town_Layout",
-      "width": 50,
-      "height": 40,
+      "width": 20,
+      "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Gym_Town/border.bin",
       "blockdata_filepath": "data/layouts/Gym_Town/map.bin"
     }
