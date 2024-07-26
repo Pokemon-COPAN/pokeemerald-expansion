@@ -4464,10 +4464,10 @@
     {
       "id": "LAYOUT_COPAN_ROUTE101",
       "name": "CopanRoute101_Layout",
-      "width": 30,
+      "width": 35,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_IslandHarbor",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/CopanRoute101/border.bin",
       "blockdata_filepath": "data/layouts/CopanRoute101/map.bin"
     },
