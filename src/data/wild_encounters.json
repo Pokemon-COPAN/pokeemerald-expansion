@@ -11493,21 +11493,106 @@
           }
         },
         {
-          "map": "MAP_COPAN_LAB",
-          "base_label": "gCopanLab0",
+          "map": "MAP_COPAN_ROUTE101",
+          "base_label": "gCopanRoute1010",
           "land_mons": {
-            "encounter_rate": 50,
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_MARILL"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_KRABBY"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_MARILL"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_PONYTA"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 6,
+                "max_level": 9,
+                "species": "SPECIES_PONYTA"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_JIRACHI"
+                "species": "SPECIES_NONE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_JIRACHI"
+                "species": "SPECIES_NONE"
               },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,

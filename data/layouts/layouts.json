@@ -4494,7 +4494,7 @@
     {
       "id": "LAYOUT_COPAN_ROUTE102",
       "name": "CopanRoute102_Layout",
-      "width": 20,
+      "width": 30,
       "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
