@@ -4514,10 +4514,10 @@
     {
       "id": "LAYOUT_GYM_TOWN",
       "name": "Gym_Town_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 41,
+      "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Gym_Town/border.bin",
       "blockdata_filepath": "data/layouts/Gym_Town/map.bin"
     }
