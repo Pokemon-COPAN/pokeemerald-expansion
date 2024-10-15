@@ -1,5 +1,5 @@
 mapscripts IslandviewTown_MapScripts {}
 
 script IslandviewTown_Eventscript_Man1 {
-	msgbox("Hello world!")
+	msgbox(format("Hello world! I am making a longer text here on purpose. Let's see what happens!"))
 }
