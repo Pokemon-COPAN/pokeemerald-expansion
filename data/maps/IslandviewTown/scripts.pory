@@ -1,5 +1,6 @@
 mapscripts IslandviewTown_MapScripts {}
 
-script IslandviewTown_Eventscript_Man1 {
-	msgbox(format("Hello world! I am making a longer text here on purpose. Let's see what happens!"))
+script IslandviewTown_EventScript_FatMan {
+	msgbox(format("This island used to be the initial outpost travellers used to travel to and from Mount Copan. Later on, they moved to the mainland. Life there is rowdy, I much prefer it here."), MSGBOX_NPC)
+	end
 }
