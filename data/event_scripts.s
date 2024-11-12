@@ -1088,3 +1088,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Gym_Town/scripts.inc"
 
 	.include "data/maps/Islandview_ElderHouse/scripts.inc"
+
+	.include "data/maps/Islandview_LadyHouse/scripts.inc"

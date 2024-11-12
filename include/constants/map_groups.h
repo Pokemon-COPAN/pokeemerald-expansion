@@ -593,6 +593,7 @@
 
 // gMapGroup_IndoorIslandview
 #define MAP_ISLANDVIEW_ELDER_HOUSE (0 | (34 << 8))
+#define MAP_ISLANDVIEW_LADY_HOUSE  (1 | (34 << 8))
 
 // gMapGroup_CopanRoutesTowns
 #define MAP_COPAN_HOUSE     (0 | (35 << 8))

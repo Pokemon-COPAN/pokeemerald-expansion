@@ -625,7 +625,8 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_IndoorIslandview": [
-    "Islandview_ElderHouse"
+    "Islandview_ElderHouse",
+    "Islandview_LadyHouse"
   ],
   "gMapGroup_CopanRoutesTowns": [
     "CopanHouse",

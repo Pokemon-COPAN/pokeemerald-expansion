@@ -1,0 +1,11 @@
+mapscripts Islandview_LadyHouse_MapScripts {}
+
+script IslandviewTown_LadyHouse_FossilLady {
+	msgbox(format("Many years ago, STEEL E4 MEMBER settled here in search of rare and ancient pokemon and items. Little did he know his expedition would unlock such a goldrush. He moved out to live at sea, in private, but his son runs the Gym here. He's a colleague of my husband's, actually."), MSGBOX_NPC)
+	end
+}
+
+script IslandviewTown_LadyHouse_RivalMom {
+	msgbox(format("Oh, PLAYER. RIVAL is so excited you two are finally allowed to become a trainer. Some youngsters already walk around with Pokemon, but I thought it better for him to first focus on his studies. Not that did much good... I hope you two look out for each other. You've known each other for so long after all."), MSGBOX_NPC)
+	end
+}

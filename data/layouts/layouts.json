@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Islandview_ElderHouse/border.bin",
       "blockdata_filepath": "data/layouts/Islandview_ElderHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ISLANDVIEW_LADY_HOUSE",
+      "name": "Islandview_LadyHouse_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Islandview_LadyHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Islandview_LadyHouse/map.bin"
     }
   ]
 }
