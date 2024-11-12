@@ -1086,3 +1086,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Nuggy_Pass/scripts.inc"
 
 	.include "data/maps/Gym_Town/scripts.inc"
+
+	.include "data/maps/Islandview_ElderHouse/scripts.inc"

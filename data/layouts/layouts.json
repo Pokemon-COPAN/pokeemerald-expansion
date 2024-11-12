@@ -4520,6 +4520,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Gym_Town/border.bin",
       "blockdata_filepath": "data/layouts/Gym_Town/map.bin"
+    },
+    {
+      "id": "LAYOUT_ISLANDVIEW_ELDER_HOUSE",
+      "name": "Islandview_ElderHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Islandview_ElderHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Islandview_ElderHouse/map.bin"
     }
   ]
 }

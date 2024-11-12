@@ -2040,3 +2040,29 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 # 1021 "data/maps/LittlerootTown/scripts.pory"
 	.string "Let's go to my LAB.$"
+# 1022 "data/maps/LittlerootTown/scripts.pory"
+
+# 1023 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Eventscript_Man1::
+# 1024 "data/maps/LittlerootTown/scripts.pory"
+# 4 "data/maps/IslandviewTown/scripts.pory"
+# 1025 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_Eventscript_Man1_Text_0, MSGBOX_DEFAULT
+# 1026 "data/maps/LittlerootTown/scripts.pory"
+	end
+# 1027 "data/maps/LittlerootTown/scripts.pory"
+
+# 1028 "data/maps/LittlerootTown/scripts.pory"
+LittlerootTown_Eventscript_Man1_Text_0:
+# 1029 "data/maps/LittlerootTown/scripts.pory"
+# 4 "data/maps/IslandviewTown/scripts.pory"
+# 1030 "data/maps/LittlerootTown/scripts.pory"
+	.string "This island used to be the initial\n"
+# 1031 "data/maps/LittlerootTown/scripts.pory"
+	.string "outpost travellers used to travel to\l"
+# 1032 "data/maps/LittlerootTown/scripts.pory"
+	.string "and from Mount Copan. Later on, they\l"
+# 1033 "data/maps/LittlerootTown/scripts.pory"
+	.string "moved to the mainland. Life there is\l"
+# 1034 "data/maps/LittlerootTown/scripts.pory"
+	.string "rowdy, I much prefer it here.$"

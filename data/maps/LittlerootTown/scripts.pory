@@ -1020,4 +1020,18 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_Eventscript_Man1::
+# 4 "data/maps/IslandviewTown/scripts.pory"
+	msgbox LittlerootTown_Eventscript_Man1_Text_0, MSGBOX_DEFAULT
+	end
+
+LittlerootTown_Eventscript_Man1_Text_0:
+# 4 "data/maps/IslandviewTown/scripts.pory"
+	.string "This island used to be the initial\n"
+	.string "outpost travellers used to travel to\l"
+	.string "and from Mount Copan. Later on, they\l"
+	.string "moved to the mainland. Life there is\l"
+	.string "rowdy, I much prefer it here.$"
 `
+
+
