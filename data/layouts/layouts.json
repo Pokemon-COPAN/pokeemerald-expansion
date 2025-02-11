@@ -4414,10 +4414,10 @@
     {
       "id": "LAYOUT_COPAN_HOUSE",
       "name": "CopanHouse_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/CopanHouse/border.bin",
       "blockdata_filepath": "data/layouts/CopanHouse/map.bin"
     },
@@ -4434,8 +4434,8 @@
     {
       "id": "LAYOUT_SANDBOX_TOWN",
       "name": "Sandbox_Town_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 50,
+      "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Sandbox_Town/border.bin",
@@ -4474,10 +4474,10 @@
     {
       "id": "LAYOUT_SUNSET_POND",
       "name": "Sunset_Pond_Layout",
-      "width": 50,
-      "height": 50,
+      "width": 40,
+      "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Sunset_Pond/border.bin",
       "blockdata_filepath": "data/layouts/Sunset_Pond/map.bin"
     },
