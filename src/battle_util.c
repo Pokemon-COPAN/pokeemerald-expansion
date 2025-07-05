@@ -8155,7 +8155,7 @@ u8 IsMonDisobedient(void)
         if (FlagGet(FLAG_BADGE08_GET)) // Rain Badge, ignore obedience altogether
             return 0;
 
-        obedienceLevel = 10;
+        obedienceLevel = 14;
 
         if (FlagGet(FLAG_BADGE01_GET)) // Stone Badge
             obedienceLevel = 20;
@@ -8173,11 +8173,13 @@ u8 IsMonDisobedient(void)
             obedienceLevel = 80;
     }
 
-    if (B_OBEDIENCE_MECHANICS >= GEN_8
-     && !IsOtherTrainer(gBattleMons[gBattlerAttacker].otId, gBattleMons[gBattlerAttacker].otName))
-        levelReferenced = gBattleMons[gBattlerAttacker].metLevel;
-    else
-        levelReferenced = gBattleMons[gBattlerAttacker].level;
+//    if (B_OBEDIENCE_MECHANICS >= GEN_8
+//     && !IsOtherTrainer(gBattleMons[gBattlerAttacker].otId, gBattleMons[gBattlerAttacker].otName))
+//        levelReferenced = gBattleMons[gBattlerAttacker].metLevel;
+//    else
+//        levelReferenced = gBattleMons[gBattlerAttacker].level;
+//  To make it so that the obedience is determined by current level, even for own pokemon if B_OBEDIENCE MECHANICS >= GEN_8
+    levelReferenced = gBattleMons[gBattlerAttacker].level;
 
     if (levelReferenced <= obedienceLevel)
         return 0;

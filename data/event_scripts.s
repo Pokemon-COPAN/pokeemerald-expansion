@@ -1067,3 +1067,32 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+	.include "data/maps/CopanHouse/scripts.inc"
+	.include "data/maps/CopanLab/scripts.inc"
+	.include "data/maps/Sandbox_Gym/scripts.inc"
+	.include "data/maps/Sandbox_Town/scripts.inc"
+
+
+	.include "data/maps/IslandviewTown/scripts.inc"
+
+	.include "data/maps/CopanRoute101/scripts.inc"
+
+	.include "data/maps/Sunset_Pond/scripts.inc"
+
+	.include "data/maps/Harbor_Town/scripts.inc"
+
+	.include "data/maps/CopanRoute102/scripts.inc"
+
+	.include "data/maps/Nuggy_Pass/scripts.inc"
+
+	.include "data/maps/Gym_Town/scripts.inc"
+
+	.include "data/maps/Islandview_ElderHouse/scripts.inc"
+
+	.include "data/maps/Islandview_LadyHouse/scripts.inc"
+
+	.include "data/maps/Route102_New/scripts.inc"
+
+	.include "data/maps/CopanRoute103/scripts.inc"
+
+	.include "data/maps/Route103_New/scripts.inc"

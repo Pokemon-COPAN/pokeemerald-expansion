@@ -1,0 +1,39 @@
+{
+  "id": "MAP_ROUTE102_NEW",
+  "name": "Route102_New",
+  "layout": "LAYOUT_ROUTE102_NEW",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_HARBOR_TOWN",
+      "offset": -1,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE103_NEW",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

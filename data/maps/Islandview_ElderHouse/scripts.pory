@@ -1,0 +1,11 @@
+mapscripts Islandview_ElderHouse_MapScripts {}
+
+script IslandviewTown_ElderHouse_ElderMan {
+	msgbox(format("This island used to be the initial outpost travellers used to travel to and from Mount Copan. Later on, they moved to the mainland. Life there is rowdy, I much prefer it here."), MSGBOX_NPC)
+	end
+}
+
+script IslandviewTown_ElderHouse_ElderWoman {
+	msgbox(format("Around sunrise and sunset, between 6 and 8 in the morning and at night, some Murkrow make a lot of noise around here. Very troubling."), MSGBOX_NPC)
+	end
+}

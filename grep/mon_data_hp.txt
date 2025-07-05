@@ -1,0 +1,595 @@
+test/test_runner_battle.c:879:            INVALID_IF(GetMonData(DATA.currentMon, MON_DATA_HP) == 0, "Battlers cannot be fainted");
+test/test_runner_battle.c:953:    SetMonData(DATA.currentMon, MON_DATA_HP, &hp);
+Binary file build/emerald/src/battle_tower.o matches
+Binary file build/emerald/src/battle_anim_effects_1.o matches
+Binary file build/emerald/src/wireless_communication_status_screen.o matches
+Binary file build/emerald/src/evolution_graphics.o matches
+Binary file build/emerald/src/mystery_event_script.o matches
+Binary file build/emerald/src/item_menu.o matches
+Binary file build/emerald/src/strings.o matches
+Binary file build/emerald/src/slot_machine.o matches
+Binary file build/emerald/src/contest_ai.o matches
+Binary file build/emerald/src/ereader_screen.o matches
+Binary file build/emerald/src/money.o matches
+Binary file build/emerald/src/contest_painting.o matches
+Binary file build/emerald/src/battle_ai_util.o matches
+Binary file build/emerald/src/overworld.o matches
+Binary file build/emerald/src/hof_pc.o matches
+Binary file build/emerald/src/mystery_gift_menu.o matches
+Binary file build/emerald/src/palette_util.o matches
+Binary file build/emerald/src/battle_setup.o matches
+Binary file build/emerald/src/coord_event_weather.o matches
+Binary file build/emerald/src/battle_debug.o matches
+Binary file build/emerald/src/pokedex_area_screen.o matches
+Binary file build/emerald/src/tileset_anims.o matches
+Binary file build/emerald/src/pokeblock_feed.o matches
+Binary file build/emerald/src/field_player_avatar.o matches
+Binary file build/emerald/src/region_map.o matches
+Binary file build/emerald/src/pokedex.o matches
+Binary file build/emerald/src/title_screen.o matches
+Binary file build/emerald/src/field_specials.o matches
+Binary file build/emerald/src/mon_markings.o matches
+Binary file build/emerald/src/trainer_see.o matches
+Binary file build/emerald/src/pokemon.o matches
+Binary file build/emerald/src/battle_arena.o matches
+Binary file build/emerald/src/pokemon_size_record.o matches
+Binary file build/emerald/src/berry_crush.o matches
+Binary file build/emerald/src/record_mixing.o matches
+Binary file build/emerald/src/intro.o matches
+Binary file build/emerald/src/ereader_helpers.o matches
+Binary file build/emerald/src/battle_controller_safari.o matches
+Binary file build/emerald/src/tilesets.o matches
+Binary file build/emerald/src/graphics.o matches
+Binary file build/emerald/src/wallclock.o matches
+Binary file build/emerald/src/battle_interface.o matches
+Binary file build/emerald/src/text_window.o matches
+Binary file build/emerald/src/field_poison.o matches
+Binary file build/emerald/src/expansion_intro.o matches
+Binary file build/emerald/src/pokenav_menu_handler.o matches
+Binary file build/emerald/src/battle_pike.o matches
+Binary file build/emerald/src/item_use.o matches
+Binary file build/emerald/src/trainer_pokemon_sprites.o matches
+Binary file build/emerald/src/move_relearner.o matches
+Binary file build/emerald/src/pokemon_storage_system.o matches
+Binary file build/emerald/src/fldeff_escalator.o matches
+Binary file build/emerald/src/battle_script_commands.o matches
+Binary file build/emerald/src/field_special_scene.o matches
+Binary file build/emerald/src/battle_anim_water.o matches
+Binary file build/emerald/src/battle_anim_fire.o matches
+Binary file build/emerald/src/image_processing_effects.o matches
+Binary file build/emerald/src/battle_util.o matches
+Binary file build/emerald/src/field_weather.o matches
+Binary file build/emerald/src/decoration_inventory.o matches
+Binary file build/emerald/src/script_movement.o matches
+Binary file build/emerald/src/battle_anim_effects_2.o matches
+Binary file build/emerald/src/link.o matches
+Binary file build/emerald/src/dodrio_berry_picking.o matches
+Binary file build/emerald/src/party_menu.o matches
+Binary file build/emerald/src/mystery_event_msg.o matches
+Binary file build/emerald/src/menu.o matches
+Binary file build/emerald/src/battle_anim_rock.o matches
+Binary file build/emerald/src/bard_music.o matches
+Binary file build/emerald/src/reset_rtc_screen.o matches
+Binary file build/emerald/src/mail_data.o matches
+Binary file build/emerald/src/battle_records.o matches
+Binary file build/emerald/src/battle_ai_switch_items.o matches
+Binary file build/emerald/src/pokenav_conditions_search_results.o matches
+Binary file build/emerald/src/battle_anim_flying.o matches
+Binary file build/emerald/src/battle_dome.o matches
+Binary file build/emerald/src/battle_controller_player.o matches
+Binary file build/emerald/src/sound.o matches
+Binary file build/emerald/src/battle_tv.o matches
+Binary file build/emerald/src/field_screen_effect.o matches
+Binary file build/emerald/src/intro_credits_graphics.o matches
+Binary file build/emerald/src/braille_puzzles.o matches
+Binary file build/emerald/src/digit_obj_util.o matches
+Binary file build/emerald/src/braille.o matches
+Binary file build/emerald/src/battle_anim_mon_movement.o matches
+Binary file build/emerald/src/egg_hatch.o matches
+Binary file build/emerald/src/battle_controller_recorded_player.o matches
+Binary file build/emerald/src/safari_zone.o matches
+Binary file build/emerald/src/trade.o matches
+Binary file build/emerald/src/pokenav_list.o matches
+Binary file build/emerald/src/credits.o matches
+Binary file build/emerald/src/lottery_corner.o matches
+Binary file build/emerald/src/match_call.o matches
+Binary file build/emerald/src/fldeff_softboiled.o matches
+Binary file build/emerald/src/rom_header_gf.o matches
+Binary file build/emerald/src/main.o matches
+Binary file build/emerald/src/field_camera.o matches
+Binary file build/emerald/src/landmark.o matches
+Binary file build/emerald/src/field_effect.o matches
+Binary file build/emerald/src/pokenav_match_call_gfx.o matches
+Binary file build/emerald/src/daycare.o matches
+Binary file build/emerald/src/battle_controller_link_opponent.o matches
+Binary file build/emerald/src/diploma.o matches
+Binary file build/emerald/src/battle_anim_ground.o matches
+Binary file build/emerald/src/frontier_util.o matches
+Binary file build/emerald/src/contest_util.o matches
+Binary file build/emerald/src/easy_chat.o matches
+Binary file build/emerald/src/field_region_map.o matches
+Binary file build/emerald/src/berry_fix_program.o matches
+Binary file build/emerald/src/event_object_lock.o matches
+Binary file build/emerald/src/battle_bg.o matches
+Binary file build/emerald/src/birch_pc.o matches
+Binary file build/emerald/src/roulette.o matches
+Binary file build/emerald/src/tv.o matches
+Binary file build/emerald/src/battle_anim_bug.o matches
+Binary file build/emerald/src/battle_anim_ghost.o matches
+Binary file build/emerald/src/rotating_gate.o matches
+Binary file build/emerald/src/link_rfu_2.o matches
+Binary file build/emerald/src/mail.o matches
+Binary file build/emerald/src/union_room_chat.o matches
+Binary file build/emerald/src/mystery_event_menu.o matches
+Binary file build/emerald/src/save_failed_screen.o matches
+Binary file build/emerald/src/battle_anim_poison.o matches
+Binary file build/emerald/src/test_runner_stub.o matches
+Binary file build/emerald/src/data.o matches
+Binary file build/emerald/src/pokeball.o matches
+Binary file build/emerald/src/link_rfu_3.o matches
+Binary file build/emerald/src/trainer_hill.o matches
+Binary file build/emerald/src/pokemon_debug.o matches
+Binary file build/emerald/src/battle_controller_opponent.o matches
+Binary file build/emerald/src/scanline_effect.o matches
+Binary file build/emerald/src/battle_anim_normal.o matches
+Binary file build/emerald/src/text_input_strings.o matches
+Binary file build/emerald/src/mauville_old_man.o matches
+Binary file build/emerald/src/union_room_battle.o matches
+Binary file build/emerald/src/map_name_popup.o matches
+Binary file build/emerald/src/pokenav_main_menu.o matches
+Binary file build/emerald/src/field_tasks.o matches
+Binary file build/emerald/src/new_game.o matches
+Binary file build/emerald/src/pokemon_icon.o matches
+Binary file build/emerald/src/pokenav_conditions.o matches
+Binary file build/emerald/src/gym_leader_rematch.o matches
+Binary file build/emerald/src/naming_screen.o matches
+Binary file build/emerald/src/battle_anim_utility_funcs.o matches
+Binary file build/emerald/src/pokenav_ribbons_summary.o matches
+Binary file build/emerald/src/cable_club.o matches
+Binary file build/emerald/src/fonts.o matches
+Binary file build/emerald/src/dynamic_placeholder_text_util.o matches
+Binary file build/emerald/src/rtc.o matches
+Binary file build/emerald/src/save_location.o matches
+Binary file build/emerald/src/play_time.o matches
+Binary file build/emerald/src/confetti_util.o matches
+Binary file build/emerald/src/battle_anim_throw.o matches
+Binary file build/emerald/src/rotating_tile_puzzle.o matches
+Binary file build/emerald/src/reshow_battle_screen.o matches
+Binary file build/emerald/src/random.o matches
+Binary file build/emerald/src/pokenav_menu_handler_gfx.o matches
+Binary file build/emerald/src/dewford_trend.o matches
+Binary file build/emerald/src/palette.o matches
+Binary file build/emerald/src/faraway_island.o matches
+Binary file build/emerald/src/fldeff_strength.o matches
+Binary file build/emerald/src/use_pokeblock.o matches
+Binary file build/emerald/src/battle_tent.o matches
+Binary file build/emerald/src/item.o matches
+Binary file build/emerald/src/battle_controller_player_partner.o matches
+Binary file build/emerald/src/battle_ai_main.o matches
+Binary file build/emerald/src/battle_controllers.o matches
+Binary file build/emerald/src/item_icon.o matches
+Binary file build/emerald/src/wonder_news.o matches
+Binary file build/emerald/src/field_message_box.o matches
+Binary file build/emerald/src/battle_anim_fight.o matches
+Binary file build/emerald/src/battle_anim_new.o matches
+Binary file build/emerald/src/battle_anim_smokescreen.o matches
+Binary file build/emerald/src/clear_save_data_screen.o matches
+Binary file build/emerald/src/fldeff_sweetscent.o matches
+Binary file build/emerald/src/fieldmap.o matches
+Binary file build/emerald/src/starter_choose.o matches
+Binary file build/emerald/src/secret_base.o matches
+Binary file build/emerald/src/heal_location.o matches
+Binary file build/emerald/src/librfu_sio32id.o matches
+Binary file build/emerald/src/librfu_rfu.o matches
+Binary file build/emerald/src/field_control_avatar.o matches
+Binary file build/emerald/src/battle_intro.o matches
+Binary file build/emerald/src/player_pc.o matches
+Binary file build/emerald/src/post_battle_event_funcs.o matches
+Binary file build/emerald/src/time_events.o matches
+Binary file build/emerald/src/pokemon_summary_screen.o matches
+Binary file build/emerald/src/pokeblock.o matches
+Binary file build/emerald/src/start_menu.o matches
+Binary file build/emerald/src/fldeff_teleport.o matches
+Binary file build/emerald/src/event_data.o matches
+Binary file build/emerald/src/battle_anim_status_effects.o matches
+Binary file build/emerald/src/fldeff_misc.o matches
+Binary file build/emerald/src/mystery_gift_scripts.o matches
+Binary file build/emerald/src/battle_gfx_sfx_util.o matches
+Binary file build/emerald/src/battle_controller_link_partner.o matches
+Binary file build/emerald/src/minigame_countdown.o matches
+Binary file build/emerald/src/berry_fix_graphics.o matches
+Binary file build/emerald/src/roamer.o matches
+Binary file build/emerald/src/mirage_tower.o matches
+Binary file build/emerald/src/international_string_util.o matches
+Binary file build/emerald/src/battle_controller_wally.o matches
+Binary file build/emerald/src/debug.o matches
+Binary file build/emerald/src/lilycove_lady.o matches
+Binary file build/emerald/src/battle_transition.o matches
+Binary file build/emerald/src/battle_anim_mons.o matches
+Binary file build/emerald/src/contest_link_util.o matches
+Binary file build/emerald/src/mystery_gift.o matches
+Binary file build/emerald/src/battle_controller_recorded_opponent.o matches
+Binary file build/emerald/src/battle_palace.o matches
+Binary file build/emerald/src/menu_helpers.o matches
+Binary file build/emerald/src/pokedex_area_region_map.o matches
+Binary file build/emerald/src/pokemon_animation.o matches
+Binary file build/emerald/src/battle_anim_sound_tasks.o matches
+Binary file build/emerald/src/wild_encounter.o matches
+Binary file build/emerald/src/rayquaza_scene.o matches
+Binary file build/emerald/src/load_save.o matches
+Binary file build/emerald/src/union_room.o matches
+Binary file build/emerald/src/coins.o matches
+Binary file build/emerald/src/script_pokemon_util.o matches
+Binary file build/emerald/src/main_menu.o matches
+Binary file build/emerald/src/decoration.o matches
+Binary file build/emerald/src/math_util.o matches
+Binary file build/emerald/src/battle_anim_ice.o matches
+Binary file build/emerald/src/battle_anim_dragon.o matches
+Binary file build/emerald/src/fldeff_dig.o matches
+Binary file build/emerald/src/fldeff_rocksmash.o matches
+Binary file build/emerald/src/field_effect_helpers.o matches
+Binary file build/emerald/src/cable_car.o matches
+Binary file build/emerald/src/battle_anim_psychic.o matches
+Binary file build/emerald/src/script_menu.o matches
+Binary file build/emerald/src/battle_message.o matches
+Binary file build/emerald/src/pokenav_region_map.o matches
+Binary file build/emerald/src/battle_pyramid.o matches
+Binary file build/emerald/src/battle_main.o matches
+Binary file build/emerald/src/hall_of_fame.o matches
+Binary file build/emerald/src/option_menu.o matches
+Binary file build/emerald/src/berry.o matches
+Binary file build/emerald/src/trig.o matches
+Binary file build/emerald/src/shop.o matches
+Binary file build/emerald/src/battle_pyramid_bag.o matches
+Binary file build/emerald/src/scrcmd.o matches
+Binary file build/emerald/src/pokemon_jump.o matches
+Binary file build/emerald/src/pokenav_match_call_list.o matches
+Binary file build/emerald/src/AgbRfu_LinkManager.o matches
+Binary file build/emerald/src/union_room_player_avatar.o matches
+Binary file build/emerald/src/field_door.o matches
+Binary file build/emerald/src/trader.o matches
+Binary file build/emerald/src/multiboot.o matches
+Binary file build/emerald/src/frontier_pass.o matches
+Binary file build/emerald/src/mystery_gift_view.o matches
+Binary file build/emerald/src/list_menu.o matches
+Binary file build/emerald/src/battle_anim_electric.o matches
+Binary file build/emerald/src/reload_save.o matches
+Binary file build/emerald/src/berry_blender.o matches
+Binary file build/emerald/src/save.o matches
+Binary file build/emerald/src/walda_phrase.o matches
+Binary file build/emerald/src/task.o matches
+Binary file build/emerald/src/battle_factory_screen.o matches
+Binary file build/emerald/src/util.o matches
+Binary file build/emerald/src/evolution_scene.o matches
+Binary file build/emerald/src/item_menu_icons.o matches
+Binary file build/emerald/src/berry_tag_screen.o matches
+Binary file build/emerald/src/mystery_gift_server.o matches
+Binary file build/emerald/src/mystery_gift_client.o matches
+Binary file build/emerald/src/battle_z_move.o matches
+Binary file build/emerald/src/battle_factory.o matches
+Binary file build/emerald/src/battle_anim.o matches
+Binary file build/emerald/src/contest_effect.o matches
+Binary file build/emerald/src/fldeff_flash.o matches
+Binary file build/emerald/src/event_object_movement.o matches
+Binary file build/emerald/src/clock.o matches
+Binary file build/emerald/src/pokenav.o matches
+Binary file build/emerald/src/berry_powder.o matches
+Binary file build/emerald/src/pokenav_conditions_gfx.o matches
+Binary file build/emerald/src/contest_link.o matches
+Binary file build/emerald/src/battle_anim_dark.o matches
+Binary file build/emerald/src/mystery_gift_link.o matches
+Binary file build/emerald/src/recorded_battle.o matches
+Binary file build/emerald/src/apprentice.o matches
+Binary file build/emerald/src/fldeff_cut.o matches
+Binary file build/emerald/src/pokenav_ribbons_list.o matches
+Binary file build/emerald/src/menu_specialized.o matches
+Binary file build/emerald/src/decompress.o matches
+Binary file build/emerald/src/bike.o matches
+Binary file build/emerald/src/field_weather_effect.o matches
+Binary file build/emerald/src/trainer_card.o matches
+Binary file build/emerald/src/pokenav_match_call_data.o matches
+Binary file build/emerald/src/librfu_stwi.o matches
+Binary file build/emerald/src/battle_transition_frontier.o matches
+Binary file build/emerald/src/metatile_behavior.o matches
+Binary file build/emerald/src/battle_util2.o matches
+Binary file build/emerald/src/contest.o matches
+Binary file build/emerald/src/script.o matches
+Binary file build/emerald/src/pokedex_cry_screen.o matches
+Binary file build/emerald/src/battle_anim_effects_3.o matches
+Binary file build/emerald/gflib/blit.o matches
+Binary file build/emerald/gflib/io_reg.o matches
+Binary file build/emerald/gflib/gpu_regs.o matches
+Binary file build/emerald/gflib/malloc.o matches
+Binary file build/emerald/gflib/bg.o matches
+Binary file build/emerald/gflib/string_util.o matches
+Binary file build/emerald/gflib/sprite.o matches
+Binary file build/emerald/gflib/dma3_manager.o matches
+Binary file build/emerald/gflib/window.o matches
+Binary file build/emerald/gflib/text.o matches
+src/party_menu.c:1170:    if (GetMonData(&gPlayerParty[slot], MON_DATA_HP) == 0)
+src/party_menu.c:1846:    SetMonData(&gPlayerParty[tPartyId], MON_DATA_HP, &tHP);
+src/party_menu.c:1864:    tHP = GetMonData(mon, MON_DATA_HP);
+src/party_menu.c:1929:    if (GetMonData(mon, MON_DATA_HP) == 0)
+src/party_menu.c:2335:            DisplayPartyPokemonHP(GetMonData(mon, MON_DATA_HP), GetMonData(mon, MON_DATA_MAX_HP), menuBox);
+src/party_menu.c:2390:        DisplayPartyPokemonHPBar(GetMonData(mon, MON_DATA_HP), GetMonData(mon, MON_DATA_MAX_HP), menuBox);
+src/party_menu.c:2507:        if (GetMonData(&party[i], MON_DATA_SPECIES) != SPECIES_NONE && (GetMonData(&party[i], MON_DATA_HP) != 0 || GetMonData(&party[i], MON_DATA_IS_EGG)))
+src/party_menu.c:3964:    UpdateHPBar(spriteId, GetMonData(mon, MON_DATA_HP), GetMonData(mon, MON_DATA_MAX_HP));
+src/party_menu.c:4243:            if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE && GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+src/party_menu.c:4407:            hp = GetMonData(mon, MON_DATA_HP);
+src/party_menu.c:4442:            PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_DisplayHPRestoredMessage);
+src/party_menu.c:4714:            return GetMonData(mon, MON_DATA_HP_EV);
+src/party_menu.c:5439:    hp = GetMonData(mon, MON_DATA_HP);
+src/party_menu.c:5452:    PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_SacredAshDisplayHPRestored);
+src/party_menu.c:6025:        if (GetMonData(mon, MON_DATA_HP) != 0)
+src/party_menu.c:6234:    if (GetMonData(&gPlayerParty[slot], MON_DATA_HP) == 0)
+src/party_menu.c:6531:        if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_NONE && GetMonData(mon, MON_DATA_HP) != 0)
+src/daycare.c:591:                iv = GetBoxMonData(&daycare->mons[whichParents[i]].mon, MON_DATA_HP_IV);
+src/daycare.c:592:                SetMonData(egg, MON_DATA_HP_IV, &iv);
+src/pokemon_size_record.c:55:    u16 hpIV = GetMonData(pkmn, MON_DATA_HP_IV) & 0xF;
+src/battle_controller_link_partner.c:474:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_partner.c:483:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_link_partner.c:560:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_link_partner.c:608:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_partner.c:617:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_partner.c:667:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_link_partner.c:807:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_link_partner.c:821:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_link_partner.c:870:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_partner.c:906:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_partner.c:914:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_partner.c:944:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_partner.c:1348:        u32 curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_pike.c:793:    SetMonData(mon, MON_DATA_HP, data);
+src/battle_pike.c:932:                    && GetMonData(mon, MON_DATA_HP) != 0)
+src/battle_pike.c:974:            && GetMonData(mon, MON_DATA_HP) != 0)
+src/battle_pike.c:1006:            && GetMonData(mon, MON_DATA_HP) != 0)
+src/battle_pike.c:1289:        u16 curr = GetMonData(mon, MON_DATA_HP);
+src/battle_pike.c:1492:        if (GetMonData(mon, MON_DATA_HP) == 0)
+src/battle_pike.c:1561:        u16 curr = GetMonData(mon, MON_DATA_HP);
+src/battle_setup.c:746:        if (species != SPECIES_EGG && species != SPECIES_NONE && GetMonData(&gPlayerParty[i], MON_DATA_HP) != 0)
+src/battle_anim_mons.c:926:                if (GetMonData(&gEnemyParty[gBattlerPartyIndexes[battlerId]], MON_DATA_HP) == 0)
+src/battle_anim_mons.c:931:                if (GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerId]], MON_DATA_HP) == 0)
+src/battle_controller_player.c:1853:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player.c:1862:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_player.c:1939:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_player.c:1987:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player.c:1996:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player.c:2046:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_player.c:2195:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_player.c:2209:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_player.c:2258:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player.c:2294:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player.c:2302:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player.c:2332:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player.c:2949:        u32 curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_message.c:3518:                && GetMonData(&gEnemyParty[id], MON_DATA_HP)
+src/battle_message.c:3895:            && (!onlyAlive || GetMonData(&gEnemyParty[i], MON_DATA_HP, NULL)))
+src/battle_ai_switch_items.c:104:        if (GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:191:        if (GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:291:                            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_ai_switch_items.c:565:        if (GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:657:        if (GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:751:                        if (GetMonData(&party[monToSwitchId], MON_DATA_HP) == 0)
+src/battle_ai_switch_items.c:956:            || GetMonData(&party[i], MON_DATA_HP) == 0
+src/battle_ai_switch_items.c:1044:        if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/pokemon_summary_screen.c:1503:            sum->currentHP = GetMonData(mon, MON_DATA_HP);
+src/pokemon_summary_screen.c:1514:            sum->currentHP = GetMonData(mon, MON_DATA_HP);
+src/battle_main.c:630:        u16 hp = GetMonData(&(party)[(i)], MON_DATA_HP);            \
+src/battle_main.c:1333:        gMultiPartnerParty[i].hp          = GetMonData(&gPlayerParty[offset + i], MON_DATA_HP);
+src/battle_main.c:3454:                    hpStatus[i].hp = GetMonData(&gEnemyParty[i], MON_DATA_HP);
+src/battle_main.c:3473:                    hpStatus[i].hp = GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/wild_encounter.c:991:        if (GetMonData(&gPlayerParty[i], MON_DATA_HP) && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+src/battle_controller_recorded_player.c:548:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_player.c:557:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_recorded_player.c:634:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_recorded_player.c:682:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_player.c:691:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_player.c:741:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_recorded_player.c:881:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_recorded_player.c:895:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_recorded_player.c:944:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_player.c:980:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_player.c:988:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_player.c:1018:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_player.c:1487:    curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/field_specials.c:1981:    ivStorage[STAT_HP] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_HP_IV);
+src/battle_pyramid.c:1409:            SetMonData(&gEnemyParty[0], MON_DATA_HP_IV + i, &id);
+src/battle_controller_recorded_opponent.c:567:        battleMon.hpIV = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_opponent.c:576:        battleMon.hp = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_recorded_opponent.c:653:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_EV);
+src/battle_controller_recorded_opponent.c:701:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_opponent.c:710:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_recorded_opponent.c:760:        data16 = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_recorded_opponent.c:900:            SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_recorded_opponent.c:914:            SetMonData(&gEnemyParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_recorded_opponent.c:963:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_opponent.c:999:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_opponent.c:1007:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_opponent.c:1037:        SetMonData(&gEnemyParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_recorded_opponent.c:1463:    curHP = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_controllers.c:594:             && GetMonData(mon, MON_DATA_HP) != 0
+src/pokemon_storage_system.c:1454:            && GetMonData(&gPlayerParty[i], MON_DATA_HP) != 0)
+src/pokemon_storage_system.c:6829:            if (sStorage->displayMonIsEgg || GetMonData(&sStorage->movingMon, MON_DATA_HP) == 0)
+src/battle_util.c:3834:                    if (GetMonData(&party[i], MON_DATA_HP)
+src/battle_util.c:3917:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:3936:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:3976:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:3994:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:4023:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_util.c:8774:         && GetMonData(&party[i], MON_DATA_HP) == 0)
+src/battle_util.c:10301:            && GetMonData(&party[id], MON_DATA_HP)
+src/battle_util.c:10774:        && GetMonData(&party[monId], MON_DATA_HP, NULL) != 0) // Burmy isn't fainted
+src/egg_hatch.c:328:        ivs[i] = GetMonData(egg, MON_DATA_HP_IV + i);
+src/egg_hatch.c:343:        SetMonData(temp, MON_DATA_HP_IV + i,  &ivs[i]);
+src/battle_anim_water.c:1341:        hp = GetMonData(slot, MON_DATA_HP);
+src/battle_anim_water.c:1349:        hp = GetMonData(slot, MON_DATA_HP);
+src/battle_gfx_sfx_util.c:1019:    u16 hp = GetMonData(mon, MON_DATA_HP);
+src/battle_gfx_sfx_util.c:1060:    u16 hp = GetMonData(mon, MON_DATA_HP);
+src/battle_gfx_sfx_util.c:1075:        if (GetMonData(&gPlayerParty[battler1PartyId], MON_DATA_HP) != 0)
+src/battle_gfx_sfx_util.c:1077:        if (IsDoubleBattle() && GetMonData(&gPlayerParty[battler2PartyId], MON_DATA_HP) != 0)
+src/battle_gfx_sfx_util.c:1263:    hp = GetMonData(mon, MON_DATA_HP);
+src/battle_debug.c:2017:            SetMonData(mon, MON_DATA_HP, &battleMon->hp);
+src/script_pokemon_util.c:42:        SetMonData(&gPlayerParty[i], MON_DATA_HP, arg);
+src/debug.c:2683:            SetMonData(&mon, MON_DATA_HP_IV + i, &iv_val);
+src/battle_ai_util.c:2473:    if (hazardDamage >= GetMonData(mon, MON_DATA_HP))
+src/battle_ai_util.c:3230:        u16 currHp = GetMonData(&party[i], MON_DATA_HP);
+src/battle_ai_util.c:3324:         && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_ai_util.c:3348:         && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_ai_util.c:3351:         && GetMonData(&party[i], MON_DATA_HP) < GetMonData(&party[i], MON_DATA_MAX_HP))
+src/battle_ai_util.c:3365:        if (GetMonData(&party[i], MON_DATA_HP, NULL) == 0)
+src/battle_controller_opponent.c:597:        battleMon.hpIV = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_opponent.c:606:        battleMon.hp = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_opponent.c:683:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_EV);
+src/battle_controller_opponent.c:731:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_opponent.c:740:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_opponent.c:790:        data16 = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_opponent.c:939:            SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_opponent.c:953:            SetMonData(&gEnemyParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_opponent.c:1002:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_opponent.c:1038:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_opponent.c:1046:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_opponent.c:1076:        SetMonData(&gEnemyParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_opponent.c:1701:                if (GetMonData(&gEnemyParty[chosenMonId], MON_DATA_HP) != 0
+src/battle_controller_opponent.c:1734:            && GetMonData(&gEnemyParty[i], MON_DATA_HP) != 0)
+src/battle_controller_opponent.c:1758:        u32 curHP = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/roamer.c:208:    SetMonData(mon, MON_DATA_HP, &ROAMER->hp);
+src/roamer.c:231:    ROAMER->hp = GetMonData(mon, MON_DATA_HP);
+src/contest.c:2966:    if (GetMonData(pkmn, MON_DATA_HP) == 0)
+src/battle_factory.c:455:                    SetMonData(&gPlayerParty[i], MON_DATA_HP_EV + j, &evs);
+src/battle_factory.c:496:                    SetMonData(&gEnemyParty[i], MON_DATA_HP_EV + j, &evs);
+src/battle_controller_player_partner.c:660:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player_partner.c:669:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_player_partner.c:746:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_player_partner.c:794:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player_partner.c:803:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_player_partner.c:853:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_player_partner.c:993:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_player_partner.c:1007:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_player_partner.c:1056:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player_partner.c:1092:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player_partner.c:1100:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player_partner.c:1130:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_player_partner.c:1561:            if (GetMonData(&gPlayerParty[chosenMonId], MON_DATA_HP) != 0
+src/battle_controller_player_partner.c:1590:        u32 curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/trade.c:2304:            else if (GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+src/trade.c:2324:            else if (GetMonData(&gEnemyParty[i], MON_DATA_HP) == 0)
+src/trade.c:2348:            curHp = GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/trade.c:2356:            curHp = GetMonData(&gEnemyParty[i], MON_DATA_HP);
+src/trade.c:4570:    SetMonData(pokemon, MON_DATA_HP_IV, &inGameTrade->ivs[0]);
+src/frontier_util.c:1996:            u16 hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/frontier_util.c:2481:            SetMonData(&gEnemyParty[monPartyId], MON_DATA_HP_EV + j, &sFrontierBrainsMons[facility][symbol][i].evs[j]);
+src/battle_dome.c:2299:            gSaveBlock2Ptr->frontier.domePlayerPartyData[i].evs[j] = GetMonData(&gPlayerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1], MON_DATA_HP_EV + j, NULL);
+src/secret_base.c:760:    evTotal  = GetMonData(pokemon, MON_DATA_HP_EV);
+src/field_poison.c:36:        if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) != 0)
+src/field_poison.c:56:    if (IsMonValidSpecies(pokemon) && GetMonData(pokemon, MON_DATA_HP) == 0 && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN)
+src/field_poison.c:129:            hp = GetMonData(pokemon, MON_DATA_HP);
+src/field_poison.c:133:            SetMonData(pokemon, MON_DATA_HP, &hp);
+src/battle_script_commands.c:4148:                if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+src/battle_script_commands.c:4241:                if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP)
+src/battle_script_commands.c:4331:            if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP) && GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL) != MAX_LEVEL)
+src/battle_script_commands.c:4375:                    gBattleMons[battlerId].hp = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP);
+src/battle_script_commands.c:4435:                HP_count += GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/battle_script_commands.c:4456:                HP_count += GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/battle_script_commands.c:4466:                HP_count += GetMonData(&gPlayerParty[i], MON_DATA_HP);
+src/battle_script_commands.c:4485:            HP_count += GetMonData(&gEnemyParty[i], MON_DATA_HP);
+src/battle_script_commands.c:6363:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:6387:             && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:6432:             && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:6451:             && GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:6486:            if (GetMonData(&party[i], MON_DATA_HP) != 0
+src/battle_script_commands.c:7531:            hpStatuses[i].hp = GetMonData(&party[i], MON_DATA_HP);
+src/battle_script_commands.c:8394:    gBattleMons[battler].hp = GetMonData(mon, MON_DATA_HP);
+src/battle_script_commands.c:8567:        if (species != SPECIES_NONE && species != SPECIES_EGG && GetMonData(&party[i], MON_DATA_HP) != 0)
+src/battle_script_commands.c:9131:            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP, &gBattleMons[gActiveBattler].hp);
+src/battle_script_commands.c:12214:             && GetMonData(&party[i], MON_DATA_HP) != 0)
+src/battle_script_commands.c:12238:                   || GetMonData(&party[i], MON_DATA_HP) == 0);
+src/battle_script_commands.c:13984:            if (GetMonData(&party[gBattleCommunication[0]], MON_DATA_HP)
+src/battle_script_commands.c:15536:                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
+src/battle_script_commands.c:15590:                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
+src/reshow_battle_screen.c:221:            if (GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+src/reshow_battle_screen.c:259:            if (GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+src/reshow_battle_screen.c:311:            if (GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+src/reshow_battle_screen.c:316:            if (GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0 || GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_IS_EGG))
+src/battle_interface.c:1364:            s32 currHp = GetMonData(&gPlayerParty[gBattlerPartyIndexes[i]], MON_DATA_HP);
+src/battle_interface.c:2363:    s32 currHp = GetMonData(mon, MON_DATA_HP);
+src/battle_ai_main.c:279:        if (GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+src/pokemon.c:3295:    MON_DATA_HP_EV,
+src/pokemon.c:3388:    SetMonData(mon, MON_DATA_HP, &arg);
+src/pokemon.c:3521:        SetBoxMonData(boxMon, MON_DATA_HP_IV, &fixedIV);
+src/pokemon.c:3534:        SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+src/pokemon.c:3552:            SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+src/pokemon.c:3581:                    SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+src/pokemon.c:3681:    SetMonData(mon, MON_DATA_HP_IV, &ivs[STAT_HP]);
+src/pokemon.c:3715:            SetMonData(mon, MON_DATA_HP_EV + i, &evAmount);
+src/pokemon.c:3752:    SetMonData(mon, MON_DATA_HP_EV, &src->hpEV);
+src/pokemon.c:3761:    SetMonData(mon, MON_DATA_HP_IV, &value);
+src/pokemon.c:3814:    SetMonData(mon, MON_DATA_HP_EV, &src->hpEV);
+src/pokemon.c:3823:    SetMonData(mon, MON_DATA_HP_IV, &value);
+src/pokemon.c:3862:        SetMonData(mon, MON_DATA_HP_EV + i, &evAmount);
+src/pokemon.c:3897:            SetMonData(mon, MON_DATA_HP_EV + i, &evAmount);
+src/pokemon.c:3923:    dest->hpEV = GetMonData(mon, MON_DATA_HP_EV, NULL);
+src/pokemon.c:3930:    dest->hpIV = GetMonData(mon, MON_DATA_HP_IV, NULL);
+src/pokemon.c:4089:    s32 currentHP = GetMonData(mon, MON_DATA_HP, NULL);
+src/pokemon.c:4090:    s32 hpIV = GetMonData(mon, MON_DATA_HP_IV, NULL);
+src/pokemon.c:4091:    s32 hpEV = GetMonData(mon, MON_DATA_HP_EV, NULL);
+src/pokemon.c:4153:    SetMonData(mon, MON_DATA_HP, &currentHP);
+src/pokemon.c:4161:    SetMonData(dest, MON_DATA_HP, &value);
+src/pokemon.c:4630:    case MON_DATA_HP:
+src/pokemon.c:4810:    case MON_DATA_HP_EV:
+src/pokemon.c:4864:    case MON_DATA_HP_IV:
+src/pokemon.c:5048:    case MON_DATA_HP:
+src/pokemon.c:5184:    case MON_DATA_HP_EV:
+src/pokemon.c:5244:    case MON_DATA_HP_IV:
+src/pokemon.c:5450:         && GetMonData(&gPlayerParty[i], MON_DATA_HP, NULL) != 0
+src/pokemon.c:5467:         && GetMonData(&gPlayerParty[i], MON_DATA_HP, NULL) != 0)
+src/pokemon.c:5532:                SetMonData(&gEnemyParty[i], MON_DATA_HP_EV + j, &gBattleResources->secretBase->party.EVs[i]);
+src/pokemon.c:5630:    dst->hpIV = GetMonData(src, MON_DATA_HP_IV, NULL);
+src/pokemon.c:5639:    dst->hp = GetMonData(src, MON_DATA_HP, NULL);
+src/pokemon.c:6030:                            if (GetMonData(mon, MON_DATA_HP, NULL) != 0)
+src/pokemon.c:6054:                            if (GetMonData(mon, MON_DATA_HP, NULL) == 0)
+src/pokemon.c:6066:                            dataUnsigned = GetMonData(mon, MON_DATA_MAX_HP, NULL) - GetMonData(mon, MON_DATA_HP, NULL);
+src/pokemon.c:6084:                        if (GetMonData(mon, MON_DATA_MAX_HP, NULL) != GetMonData(mon, MON_DATA_HP, NULL))
+src/pokemon.c:6089:                                dataUnsigned = GetMonData(mon, MON_DATA_HP, NULL) + dataUnsigned;
+src/pokemon.c:6092:                                SetMonData(mon, MON_DATA_HP, &dataUnsigned);
+src/pokemon.c:6841:                u16 currentHp = GetMonData(mon, MON_DATA_HP, NULL);
+src/pokemon.c:7233:        evs[i] = GetMonData(mon, MON_DATA_HP_EV + i, 0);
+src/pokemon.c:7302:        SetMonData(mon, MON_DATA_HP_EV + i, &evs[i]);
+src/pokemon.c:7312:        count += GetMonData(mon, MON_DATA_HP_EV + i, 0);
+src/battle_controller_wally.c:476:        battleMon.hpIV = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_wally.c:485:        battleMon.hp = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_wally.c:562:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_EV);
+src/battle_controller_wally.c:610:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_wally.c:619:        dst[0] = GetMonData(&gPlayerParty[monId], MON_DATA_HP_IV);
+src/battle_controller_wally.c:669:        data16 = GetMonData(&gPlayerParty[monId], MON_DATA_HP);
+src/battle_controller_wally.c:809:            SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_wally.c:823:            SetMonData(&gPlayerParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_wally.c:872:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_wally.c:908:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_wally.c:916:        SetMonData(&gPlayerParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_wally.c:946:        SetMonData(&gPlayerParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_wally.c:1272:        u32 curHP = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/fldeff_softboiled.c:25:    hp = GetMonData(&gPlayerParty[GetCursorSelectionMonId()], MON_DATA_HP);
+src/fldeff_softboiled.c:56:    hp = GetMonData(&gPlayerParty[recipientPartyId], MON_DATA_HP);
+src/battle_controller_link_opponent.c:580:        battleMon.hpIV = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_opponent.c:589:        battleMon.hp = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_link_opponent.c:666:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_EV);
+src/battle_controller_link_opponent.c:714:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_opponent.c:723:        dst[0] = GetMonData(&gEnemyParty[monId], MON_DATA_HP_IV);
+src/battle_controller_link_opponent.c:773:        data16 = GetMonData(&gEnemyParty[monId], MON_DATA_HP);
+src/battle_controller_link_opponent.c:913:            SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &iv);
+src/battle_controller_link_opponent.c:927:            SetMonData(&gEnemyParty[monId], MON_DATA_HP, &battlePokemon->hp);
+src/battle_controller_link_opponent.c:976:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_EV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_opponent.c:1012:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_opponent.c:1020:        SetMonData(&gEnemyParty[monId], MON_DATA_HP_IV, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_opponent.c:1050:        SetMonData(&gEnemyParty[monId], MON_DATA_HP, &gBattleResources->bufferA[gActiveBattler][3]);
+src/battle_controller_link_opponent.c:1511:        u32 curHP = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_HP);
+src/battle_tv.c:777:        if (!(gBattleTypeFlags & BATTLE_TYPE_LINK) && GetMonData(defMon, MON_DATA_HP, NULL) != 0)
+src/battle_tv.c:893:        if (GetMonData(atkMon, MON_DATA_HP, NULL)
+src/battle_tv.c:918:        if (GetMonData(atkMon, MON_DATA_HP, NULL) != 0
+src/battle_tv.c:935:        if (GetMonData(atkMon, MON_DATA_HP, NULL) != 0
+src/battle_tv.c:948:        if (GetMonData(atkMon, MON_DATA_HP, NULL) != 0)
+src/battle_tv.c:965:        if (GetMonData(atkMon, MON_DATA_HP, NULL) != 0)
+src/battle_tower.c:3032:                SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_HP_EV + j, &sStevenMons[i].evs[j]);
+include/pokemon.h:39:    MON_DATA_HP_EV,
+include/pokemon.h:52:    MON_DATA_HP_IV,
+include/pokemon.h:70:    MON_DATA_HP,
