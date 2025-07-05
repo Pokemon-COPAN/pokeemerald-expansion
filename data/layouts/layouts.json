@@ -4570,6 +4570,36 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route103_New/border.bin",
       "blockdata_filepath": "data/layouts/Route103_New/map.bin"
+    },
+    {
+      "id": "LAYOUT_HARBOR_TOWN_TWO_DUDES_HOUSE",
+      "name": "HarborTown_TwoDudesHouse_Layout",
+      "width": 10,
+      "height": 6,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HarborTown_TwoDudesHouse/border.bin",
+      "blockdata_filepath": "data/layouts/HarborTown_TwoDudesHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HARBOR_TOWN_KID_HOUSE",
+      "name": "HarborTown_KidHouse_Layout",
+      "width": 10,
+      "height": 6,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HarborTown_KidHouse/border.bin",
+      "blockdata_filepath": "data/layouts/HarborTown_KidHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HARBOR_TOWN_ELDERLY_LADY_HOUSE",
+      "name": "HarborTown_ElderlyLadyHouse_Layout",
+      "width": 10,
+      "height": 6,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HarborTown_ElderlyLadyHouse/border.bin",
+      "blockdata_filepath": "data/layouts/HarborTown_ElderlyLadyHouse/map.bin"
     }
   ]
 }

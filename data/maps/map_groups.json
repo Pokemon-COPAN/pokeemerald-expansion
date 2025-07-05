@@ -1,5 +1,4 @@
 {
-  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
@@ -37,7 +36,8 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorIslandview",
     "gMapGroup_CopanRoutesTowns",
-    "gMapGroup_CopanIndoor"
+    "gMapGroup_CopanIndoor",
+    "gMapGroup_CopanIndoorHarborTown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -646,5 +646,10 @@
   "gMapGroup_CopanIndoor": [
     "CopanLab",
     "Sandbox_Gym"
+  ],
+  "gMapGroup_CopanIndoorHarborTown": [
+    "HarborTown_TwoDudesHouse",
+    "HarborTown_KidHouse",
+    "HarborTown_ElderlyLadyHouse"
   ]
 }

@@ -1096,3 +1096,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CopanRoute103/scripts.inc"
 
 	.include "data/maps/Route103_New/scripts.inc"
+
+	.include "data/maps/HarborTown_TwoDudesHouse/scripts.inc"
+
+	.include "data/maps/HarborTown_KidHouse/scripts.inc"
+
+	.include "data/maps/HarborTown_ElderlyLadyHouse/scripts.inc"
