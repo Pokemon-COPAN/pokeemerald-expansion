@@ -1090,3 +1090,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Islandview_ElderHouse/scripts.inc"
 
 	.include "data/maps/Islandview_LadyHouse/scripts.inc"
+
+	.include "data/maps/Route102_New/scripts.inc"
+
+	.include "data/maps/CopanRoute103/scripts.inc"
+
+	.include "data/maps/Route103_New/scripts.inc"

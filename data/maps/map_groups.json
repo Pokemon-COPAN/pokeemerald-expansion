@@ -1,4 +1,5 @@
 {
+  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
@@ -95,7 +96,8 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "CopanRoute103"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -637,7 +639,9 @@
     "Harbor_Town",
     "CopanRoute102",
     "Nuggy_Pass",
-    "Gym_Town"
+    "Gym_Town",
+    "Route102_New",
+    "Route103_New"
   ],
   "gMapGroup_CopanIndoor": [
     "CopanLab",

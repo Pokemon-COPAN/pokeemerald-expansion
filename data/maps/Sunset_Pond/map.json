@@ -17,6 +17,11 @@
       "map": "MAP_ISLANDVIEW_TOWN",
       "offset": -6,
       "direction": "right"
+    },
+    {
+      "map": "MAP_COPAN_ROUTE102",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [

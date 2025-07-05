@@ -4457,7 +4457,7 @@
       "width": 40,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_IslandHarbor",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/IslandviewTown/border.bin",
       "blockdata_filepath": "data/layouts/IslandviewTown/map.bin"
     },
@@ -4540,6 +4540,36 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Islandview_LadyHouse/border.bin",
       "blockdata_filepath": "data/layouts/Islandview_LadyHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE102_NEW",
+      "name": "Route102_New_Layout",
+      "width": 48,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route102_New/border.bin",
+      "blockdata_filepath": "data/layouts/Route102_New/map.bin"
+    },
+    {
+      "id": "LAYOUT_COPAN_ROUTE103",
+      "name": "CopanRoute103_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CopanRoute103/border.bin",
+      "blockdata_filepath": "data/layouts/CopanRoute103/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE103_NEW",
+      "name": "Route103_New_Layout",
+      "width": 20,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route103_New/border.bin",
+      "blockdata_filepath": "data/layouts/Route103_New/map.bin"
     }
   ]
 }

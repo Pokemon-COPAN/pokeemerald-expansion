@@ -17,6 +17,11 @@
       "map": "MAP_COPAN_ROUTE101",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE102_NEW",
+      "offset": 1,
+      "direction": "left"
     }
   ],
   "object_events": [

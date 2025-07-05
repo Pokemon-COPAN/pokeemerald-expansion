@@ -63,6 +63,7 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
+#define MAP_COPAN_ROUTE103      (57 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -605,6 +606,8 @@
 #define MAP_COPAN_ROUTE102  (6 | (35 << 8))
 #define MAP_NUGGY_PASS      (7 | (35 << 8))
 #define MAP_GYM_TOWN        (8 | (35 << 8))
+#define MAP_ROUTE102_NEW    (9 | (35 << 8))
+#define MAP_ROUTE103_NEW    (10 | (35 << 8))
 
 // gMapGroup_CopanIndoor
 #define MAP_COPAN_LAB   (0 | (36 << 8))
