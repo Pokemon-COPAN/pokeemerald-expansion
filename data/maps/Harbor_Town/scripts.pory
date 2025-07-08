@@ -3,7 +3,7 @@ mapscripts Harbor_Town_MapScripts {}
 script HarborTown_KidByHouseScript {
     lock
     faceplayer
-    msgbox("Boats here travel from C to GOLDPORT and visit ports in between!\n\nEven though this region is small, it’s still so big! I want to visit all the places on the map! And those off the map too!")
+    msgbox(format("Boats here travel from C to GOLDPORT and visit ports in between! Even though this region is small, it’s still so big! I want to visit all the places on the map! And those off the map too!"), MSGBOX_NPC)
     release
     end
 }
@@ -11,7 +11,7 @@ script HarborTown_KidByHouseScript {
 script HarborTown_GuyByHousesScript {
     lock
     faceplayer
-    msgbox("My uncle told me that this entire region is situated in a huge lake!\n\nThe Greater Copan Mountain, the surrounding area, even this body of water we call a “sea”! He says there is an exit somewhere…")
+    msgbox(format("My uncle told me that this entire region is situated in a huge lake! The Greater Copan Mountain, the surrounding area, even this body of water we call a “sea”! He says there is an exit somewhere…"), MSGBOX_NPC)
     release
     end
 }
@@ -19,7 +19,7 @@ script HarborTown_GuyByHousesScript {
 script HarborTown_KidByCoastScript {
     lock
     faceplayer
-    msgbox("Something incredible happens here!\n\nRapidash gallop over the seas at very high speeds and Jumpluff float over the circular sea breeze from and toward the mountain!")
+    msgbox(format("Something incredible happens here! Rapidash gallop over the seas at very high speeds and Jumpluff float over the circular sea breeze from and toward the mountain!"), MSGBOX_NPC)
     release
     end
 }
@@ -27,7 +27,7 @@ script HarborTown_KidByCoastScript {
 script HarborTown_GuyAtDocks1Script {
     lock
     faceplayer
-    msgbox("These ships travel to BERRY COAST and GREENFINGER HARBOUR.\n\nTrade, travel, tourism; people find reasons to get around, don’t they?")
+    msgbox(format("These ships travel to BERRY COAST and GREENFINGER HARBOUR. Trade, travel, tourism; people find reasons to get around, don’t they?"), MSGBOX_NPC)
     release
     end
 }
@@ -35,7 +35,7 @@ script HarborTown_GuyAtDocks1Script {
 script HarborTown_GuyAtDocks2Script {
     lock
     faceplayer
-    msgbox("Travellers that travel to BERRY COAST first, usually take a more leisurely route.\n\nThey tour up the shaded side of Copan, enjoy some succulent berries, enjoy the wine, and take in the views. A scenic trek along the Dors, perhaps.")
+    msgbox(format("Travellers that travel to BERRY COAST first, usually take a more leisurely route. They tour up the shaded side of Copan, enjoy some succulent berries, enjoy the wine, and take in the views. A scenic trek along the Dors, perhaps."), MSGBOX_NPC)
     release
     end
 }
@@ -43,7 +43,7 @@ script HarborTown_GuyAtDocks2Script {
 script HarborTown_GuyAtDocks3Script {
     lock
     faceplayer
-    msgbox("Those who go to GREENFINGER HARBOUR first, take the hard but quick route.\n\nDefeat Gym Leaders, traverse dungeons and go against the river. Go against the height. Reach the top. Fight, climb, succeed!\n\nThat’s how we people and Pokemon should live! Sail towards GREENFINGER HARBOUR first, kid!")
+    msgbox(format("Those who go to GREENFINGER HARBOUR first, take the hard but quick route.\n\nDefeat Gym Leaders, traverse dungeons and go against the river. Go against the height. Reach the top. Fight, climb, succeed!\n\nThat’s how we people and Pokemon should live! Sail towards GREENFINGER HARBOUR first, kid!"), MSGBOX_NPC)
     release
     end
 }

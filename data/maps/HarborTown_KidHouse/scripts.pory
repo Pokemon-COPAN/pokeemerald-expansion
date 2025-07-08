@@ -3,7 +3,7 @@ mapscripts HarborTown_KidHouse_MapScripts {}
 script HarborTown_KidHouse_KidScript {
     lock
     faceplayer
-    msgbox(format("I hear you can challenge the gyms on Mount Copan in whatever order you want! I want to challenge the Grass-type first, but my friend says he wants to challenge the Ice-type gym first. I guess we each will have to go our own way and meet at the top!"))
+    msgbox(format("I hear you can challenge the gyms on Mount Copan in whatever order you want! I want to challenge the Grass-type first, but my friend says he wants to challenge the Ice-type gym first. I guess we each will have to go our own way and meet at the top!"), MSGBOX_NPC)
     release
     end
 }

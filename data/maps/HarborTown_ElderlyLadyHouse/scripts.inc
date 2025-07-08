@@ -8,7 +8,7 @@ HarborTown_ElderlyLadyHouse_ElderlyLadyScript::
 # 5 "data/maps/HarborTown_ElderlyLadyHouse/scripts.pory"
 	faceplayer
 # 6 "data/maps/HarborTown_ElderlyLadyHouse/scripts.pory"
-	msgbox HarborTown_ElderlyLadyHouse_ElderlyLadyScript_Text_0
+	msgbox HarborTown_ElderlyLadyHouse_ElderlyLadyScript_Text_0, MSGBOX_NPC
 # 7 "data/maps/HarborTown_ElderlyLadyHouse/scripts.pory"
 	release
 	end
@@ -16,4 +16,12 @@ HarborTown_ElderlyLadyHouse_ElderlyLadyScript::
 
 HarborTown_ElderlyLadyHouse_ElderlyLadyScript_Text_0:
 # 6 "data/maps/HarborTown_ElderlyLadyHouse/scripts.pory"
-	.string "There are many rare Pokemon around Mount Copan as well. If you look up, in the distance, you can see a thunderstorm, right? I bet a Pokemon is causing that. I know it’s off the beaten path but… after I rest up here, I’m gonna check it out. The terrain is inhospitable, but I just now defeated THE SCION VOLCANOLOGIST. I’m ready.$"
+	.string "There are many rare Pokemon around\n"
+	.string "Mount Copan as well. If you look up, in\l"
+	.string "the distance, you can see a\l"
+	.string "thunderstorm, right? I bet a Pokemon is\l"
+	.string "causing that. I know it’s off the beaten\l"
+	.string "path but… after I rest up here, I’m\l"
+	.string "gonna check it out. The terrain is\l"
+	.string "inhospitable, but I just now defeated\l"
+	.string "THE SCION VOLCANOLOGIST. I’m ready.$"

@@ -8,7 +8,7 @@ HarborTown_KidHouse_KidScript::
 # 5 "data/maps/HarborTown_KidHouse/scripts.pory"
 	faceplayer
 # 6 "data/maps/HarborTown_KidHouse/scripts.pory"
-	msgbox HarborTown_KidHouse_KidScript_Text_0
+	msgbox HarborTown_KidHouse_KidScript_Text_0, MSGBOX_NPC
 # 7 "data/maps/HarborTown_KidHouse/scripts.pory"
 	release
 	end

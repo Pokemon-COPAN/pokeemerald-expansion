@@ -3,7 +3,7 @@ mapscripts HarborTown_TwoDudesHouse_MapScripts {}
 script HarborTown_TwoDudesHouse_Dude1Script {
     lock
     faceplayer
-    msgbox("There are four gym leaders on Mount Copan: THE SEDULOUS MAYOR, THE INTREPID TOXICOLOGIST, THE RUNAWAY TEMPLAR and THE SCION VOLCANOLOGIST.\n\nThough all gym leaders are capable fighters, they all have secondary ambitions around the mountain as well. Many come here from far away to challenge them or work with them.")
+    msgbox(format("There are four gym leaders on Mount Copan: THE SEDULOUS MAYOR, THE INTREPID TOXICOLOGIST, THE RUNAWAY TEMPLAR and THE SCION VOLCANOLOGIST. Though all gym leaders are capable fighters, they all have secondary ambitions around the mountain as well. Many come here from far away to challenge them or work with them."), MSGBOX_NPC)
     release
     end
 }
@@ -11,7 +11,7 @@ script HarborTown_TwoDudesHouse_Dude1Script {
 script HarborTown_TwoDudesHouse_Dude2Script {
     lock
     faceplayer
-    msgbox("There are gym leaders in the area around Mount Copan. Our ISLANDVIEW of course houses THE ALOOF ARCHEOLOGIST.\n\nI don’t know where the others are. But if you’re serious about adventuring, you will find out on your own.")
+    msgbox(format("There are gym leaders in the area around Mount Copan. Our ISLANDVIEW of course houses THE ALOOF ARCHEOLOGIST. I don’t know where the others are. But if you’re serious about adventuring, you will find out on your own."), MSGBOX_NPC)
     release
     end
 }
