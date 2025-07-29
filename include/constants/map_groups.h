@@ -608,6 +608,7 @@
 #define MAP_GYM_TOWN        (8 | (35 << 8))
 #define MAP_ROUTE102_NEW    (9 | (35 << 8))
 #define MAP_ROUTE103_NEW    (10 | (35 << 8))
+#define MAP_SNORLAX_SHRINE  (11 | (35 << 8))
 
 // gMapGroup_CopanIndoor
 #define MAP_COPAN_LAB   (0 | (36 << 8))

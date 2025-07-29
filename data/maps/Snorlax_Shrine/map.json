@@ -1,7 +1,7 @@
 {
-  "id": "MAP_NUGGY_PASS",
-  "name": "Nuggy_Pass",
-  "layout": "LAYOUT_NUGGY_PASS",
+  "id": "MAP_SNORLAX_SHRINE",
+  "name": "Snorlax_Shrine",
+  "layout": "LAYOUT_SNORLAX_SHRINE",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -12,28 +12,25 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_ROUTE103_NEW",
-      "offset": -50,
-      "direction": "left"
-    },
-    {
-      "map": "MAP_GYM_TOWN",
-      "offset": 26,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_SUNSET_POND",
-      "offset": -20,
-      "direction": "down"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 8,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SUNSET_POND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SUNSET_POND",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
 

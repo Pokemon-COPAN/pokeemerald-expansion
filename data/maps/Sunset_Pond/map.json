@@ -22,13 +22,36 @@
       "map": "MAP_COPAN_ROUTE102",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE103_NEW",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NUGGY_PASS",
+      "offset": 20,
+      "direction": "up"
     }
   ],
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 34,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_SNORLAX_SHRINE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_SNORLAX_SHRINE",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
 

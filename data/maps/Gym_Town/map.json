@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_NUGGY_PASS",
-      "offset": 0,
+      "offset": -26,
       "direction": "down"
     }
   ],
