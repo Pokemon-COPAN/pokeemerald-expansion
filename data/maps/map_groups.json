@@ -36,7 +36,9 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorIslandview",
     "gMapGroup_CopanRoutesTowns",
-    "gMapGroup_CopanIndoor"
+    "gMapGroup_CopanDungeons",
+    "gMapGroup_CopanIndoor",
+    "gMapGroup_CopanIndoorHarborTown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -95,7 +97,8 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "CopanRoute103"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -637,10 +640,21 @@
     "Harbor_Town",
     "CopanRoute102",
     "Nuggy_Pass",
-    "Gym_Town"
+    "Gym_Town",
+    "Route102_New",
+    "Route103_New",
+    "Snorlax_Shrine"
+  ],
+  "gMapGroup_CopanDungeons": [
+    "NuggyPass_Tunnel"
   ],
   "gMapGroup_CopanIndoor": [
     "CopanLab",
     "Sandbox_Gym"
+  ],
+  "gMapGroup_CopanIndoorHarborTown": [
+    "HarborTown_TwoDudesHouse",
+    "HarborTown_KidHouse",
+    "HarborTown_ElderlyLadyHouse"
   ]
 }

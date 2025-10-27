@@ -63,6 +63,7 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
+#define MAP_COPAN_ROUTE103      (57 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -605,11 +606,22 @@
 #define MAP_COPAN_ROUTE102  (6 | (35 << 8))
 #define MAP_NUGGY_PASS      (7 | (35 << 8))
 #define MAP_GYM_TOWN        (8 | (35 << 8))
+#define MAP_ROUTE102_NEW    (9 | (35 << 8))
+#define MAP_ROUTE103_NEW    (10 | (35 << 8))
+#define MAP_SNORLAX_SHRINE  (11 | (35 << 8))
+
+// gMapGroup_CopanDungeons
+#define MAP_NUGGY_PASS_TUNNEL (0 | (36 << 8))
 
 // gMapGroup_CopanIndoor
-#define MAP_COPAN_LAB   (0 | (36 << 8))
-#define MAP_SANDBOX_GYM (1 | (36 << 8))
+#define MAP_COPAN_LAB   (0 | (37 << 8))
+#define MAP_SANDBOX_GYM (1 | (37 << 8))
 
-#define MAP_GROUPS_COUNT 37
+// gMapGroup_CopanIndoorHarborTown
+#define MAP_HARBOR_TOWN_TWO_DUDES_HOUSE    (0 | (38 << 8))
+#define MAP_HARBOR_TOWN_KID_HOUSE          (1 | (38 << 8))
+#define MAP_HARBOR_TOWN_ELDERLY_LADY_HOUSE (2 | (38 << 8))
+
+#define MAP_GROUPS_COUNT 39
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

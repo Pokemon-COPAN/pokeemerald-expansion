@@ -1,0 +1,6 @@
+mapscripts Gym_Town_MapScripts {}
+
+script Gym_Town_EventScript_Bas {
+	msgbox(format("Hallo ik ben Bas."), MSGBOX_NPC)
+	end
+}
