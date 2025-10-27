@@ -1104,3 +1104,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/HarborTown_ElderlyLadyHouse/scripts.inc"
 
 	.include "data/maps/Snorlax_Shrine/scripts.inc"
+
+	.include "data/maps/NuggyPass_Tunnel/scripts.inc"

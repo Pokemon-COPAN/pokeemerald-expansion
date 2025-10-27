@@ -4505,7 +4505,7 @@
       "id": "LAYOUT_NUGGY_PASS",
       "name": "Nuggy_Pass_Layout",
       "width": 40,
-      "height": 20,
+      "height": 25,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Nuggy_Pass/border.bin",
@@ -4564,10 +4564,10 @@
     {
       "id": "LAYOUT_ROUTE103_NEW",
       "name": "Route103_New_Layout",
-      "width": 20,
+      "width": 30,
       "height": 70,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Route103_New/border.bin",
       "blockdata_filepath": "data/layouts/Route103_New/map.bin"
     },
@@ -4610,6 +4610,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Snorlax_Shrine/border.bin",
       "blockdata_filepath": "data/layouts/Snorlax_Shrine/map.bin"
+    },
+    {
+      "id": "LAYOUT_NUGGY_PASS_TUNNEL",
+      "name": "NuggyPass_Tunnel_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/NuggyPass_Tunnel/border.bin",
+      "blockdata_filepath": "data/layouts/NuggyPass_Tunnel/map.bin"
     }
   ]
 }

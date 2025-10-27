@@ -610,15 +610,18 @@
 #define MAP_ROUTE103_NEW    (10 | (35 << 8))
 #define MAP_SNORLAX_SHRINE  (11 | (35 << 8))
 
+// gMapGroup_CopanDungeons
+#define MAP_NUGGY_PASS_TUNNEL (0 | (36 << 8))
+
 // gMapGroup_CopanIndoor
-#define MAP_COPAN_LAB   (0 | (36 << 8))
-#define MAP_SANDBOX_GYM (1 | (36 << 8))
+#define MAP_COPAN_LAB   (0 | (37 << 8))
+#define MAP_SANDBOX_GYM (1 | (37 << 8))
 
 // gMapGroup_CopanIndoorHarborTown
-#define MAP_HARBOR_TOWN_TWO_DUDES_HOUSE    (0 | (37 << 8))
-#define MAP_HARBOR_TOWN_KID_HOUSE          (1 | (37 << 8))
-#define MAP_HARBOR_TOWN_ELDERLY_LADY_HOUSE (2 | (37 << 8))
+#define MAP_HARBOR_TOWN_TWO_DUDES_HOUSE    (0 | (38 << 8))
+#define MAP_HARBOR_TOWN_KID_HOUSE          (1 | (38 << 8))
+#define MAP_HARBOR_TOWN_ELDERLY_LADY_HOUSE (2 | (38 << 8))
 
-#define MAP_GROUPS_COUNT 38
+#define MAP_GROUPS_COUNT 39
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

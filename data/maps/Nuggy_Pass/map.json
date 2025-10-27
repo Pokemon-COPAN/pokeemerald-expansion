@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE103_NEW",
-      "offset": -50,
+      "offset": -45,
       "direction": "left"
     },
     {
@@ -33,7 +33,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NUGGY_PASS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_NUGGY_PASS",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
 

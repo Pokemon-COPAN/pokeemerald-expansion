@@ -36,6 +36,7 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorIslandview",
     "gMapGroup_CopanRoutesTowns",
+    "gMapGroup_CopanDungeons",
     "gMapGroup_CopanIndoor",
     "gMapGroup_CopanIndoorHarborTown"
   ],
@@ -643,6 +644,9 @@
     "Route102_New",
     "Route103_New",
     "Snorlax_Shrine"
+  ],
+  "gMapGroup_CopanDungeons": [
+    "NuggyPass_Tunnel"
   ],
   "gMapGroup_CopanIndoor": [
     "CopanLab",
