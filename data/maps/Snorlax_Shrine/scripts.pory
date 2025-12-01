@@ -1,1 +1,230 @@
 mapscripts Snorlax_Shrine_MapScripts {}
+
+const TALKED_MOM = FLAG_TEMP_1
+const OFFER_BERRY  = FLAG_TEMP_2
+const TALKED_PROF = FLAG_TEMP_3
+const TALKED_RIVAL = FLAG_TEMP_4
+const TALKED_VILLAIN = FLAG_TEMP_5
+
+script Snorlax_Shrine_EventScript_Mom {
+    lock
+    faceplayer
+
+    // If the player has already offered the berry
+    if (flag(OFFER_BERRY)) {
+        msgbox(format("Go ahead, dear, Snorlax is hungry!"), MSGBOX_NPC)
+        release
+        end
+    // If the player has spoken to the professor, rival, and villain and offered_berry.
+    } elif (flag(TALKED_PROF) || flag(TALKED_RIVAL) || flag(TALKED_VILLAIN)) {
+		msgbox(format("Alright, dear, let’s call it a day!"), MSGBOX_NPC)
+		release
+		end
+	}
+
+	// If the player has not yet spoken to both the professor and the rival
+	if (flag(TALKED_MOM)) {
+		msgbox(format("Why don’t you socialise a little, dear?"), MSGBOX_NPC)
+		release
+		end
+	}
+
+    // First-time interaction
+    msgbox(format("Hey {PLAYER}, did you forget? Today is the Snorlax festival!
+    We joyfully gather to offer a handful of berries to our resident guardian.
+    Oh, you really forgot? Don’t worry, dear, I have some extra berries for 
+    you."), MSGBOX_NPC)
+    giveitem(ITEM_PECHA_BERRY)
+    msgbox(format("Have fun, sweetheart. I'll see you later."), MSGBOX_NPC)
+
+    // Set flags
+    setflag(OFFER_BERRY)
+    setflag(TALKED_MOM)
+
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_Professor {
+    lock
+    faceplayer
+
+    // If the player has already spoken with the professor
+    if (flag(TALKED_PROF)) {
+        msgbox(format("We think there must be roughly 16 Snorlai in Copan, but 
+        since we haven’t found them all yet, maybe you should head out to find 
+        the remaining ones? \n -Chuckles-"), MSGBOX_NPC)
+        release
+        end
+    }
+
+    // First-time dialogue
+    msgbox(format("Good evening, {PLAYER}! Are you enjoying yourself? Tonight, 
+    we celebrate the 10th year of our research effort here on this mysterious 
+    little island. We are one of the few small communities that have nestled 
+    near a Snorlax, so there are not very many other traditions like this around
+     the region!"), MSGBOX_NPC)
+
+    // Set flag
+    setflag(TALKED_PROF)
+
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_Rival {
+    lock
+    faceplayer
+
+    // If already talked to the rival once
+    if (flag(TALKED_RIVAL)) {
+        msgbox(format("You wait and wait and prepare and prepare… But one day, 
+        you just gotta do it. It takes guts to chase your dreams."), MSGBOX_NPC)
+        release
+        end
+    }
+
+    // First-time dialogue
+    msgbox(format("Hey, {PLAYER}. Everything alright? Me? I’m just a little 
+    nervous about going on my trainer journey tomorrow. My dad is waiting at the
+     top of Copan, but now I’m even a bit nervous about setting foot ashore."), 
+     MSGBOX_NPC)
+
+    // Set flag after talking
+    setflag(TALKED_RIVAL)
+
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_Villain {
+    lock
+    faceplayer
+
+    // If already talked to the rival once
+    if (flag(TALKED_VILLAIN)) {
+        msgbox(format("Snorlax is such a magnificent beast, and each of them 
+        holds a special plate. They say collecting them all summons a Pokémon 
+        that can grant wishes...  "), MSGBOX_NPC)
+        release
+        end
+    }
+
+    // First-time dialogue
+    msgbox(format("Oh? Your eyes betray an ember that cannot be doused. 
+    -Chuckles- Sorry, kid, after a long life, I’ve learnt to evaluate such 
+    things at a glance. Tonight, I am just enjoying the festival. The Professor 
+    here is an old friend of mine. We adventured together when we were young, 
+    but split up afterwards. It seems like we've taken different paths in life. 
+    "), MSGBOX_NPC)
+
+    // Set flag after talking
+    setflag(TALKED_VILLAIN)
+
+    release
+    end
+
+}
+
+script Snorlax_Shrine_EventScript_Snorlax {
+    lock
+    faceplayer
+
+    // If berry to offer
+    if (flag(OFFER_BERRY)) {
+        msgbox(format("Zzzzzz... \n Chonk. \p Snorlax seems quite pleased."), 
+        MSGBOX_NPC)
+        // Set flag after talking
+        clearflag(OFFER_BERRY)
+        release
+        end
+    }
+
+    // First-time dialogue
+    msgbox(format("Zzzzz..."))
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_Villain_Grandson {
+    lock
+    faceplayer
+    msgbox(format("Hmmm... So while eating, it doesn’t hold the plate with both
+    hands... And if eating two berries, it stops holding the plate 
+    altogether... "),
+    MSGBOX_NPC)
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_Elderly1 {
+    lock
+    faceplayer
+    msgbox(format("It’s lovely to come together like this now and again, isn’t
+    it? You should relax too, {PLAYER}, you work so hard."),
+    MSGBOX_NPC)
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_Elderly2 {
+    lock
+    faceplayer
+    msgbox(format("Hohoho, in my younger years, I was part of the expedition
+    that found this mysterious Snorlax. Now, in my golden years, I want to spend
+    my time with it."),
+    MSGBOX_NPC)
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_ProfAssistant1 {
+    lock
+    faceplayer
+    msgbox(format("It is not often we researchers gather around to celebrate
+    our research subject. I wonder if Snorlax minds?"),
+    MSGBOX_NPC)
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_ProfAssistant2 {
+    lock
+    faceplayer
+    msgbox(format("Unlike Snorlai from other regions, Copanian Snorlax have the 
+    'multitype' ability. So far, we know of 9 of them, and they all carry 
+    different plates."),
+    MSGBOX_NPC)
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_ProfAssistant3 {
+    lock
+    faceplayer
+    msgbox(format("Pokémon around this area seem to revere this Snorlax as 
+    well. None of the smaller Pokémons ever attempt to steal his berries."),
+    MSGBOX_NPC)
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_Kid1 {
+    lock
+    faceplayer
+    msgbox(format("If I run really fast, maybe I can run up that slope over
+    there!"),
+    MSGBOX_NPC)
+    release
+    end
+}
+
+script Snorlax_Shrine_EventScript_Kid2 {
+    lock
+    faceplayer
+    msgbox(format("I wonder how this Snorlax even got here. I don’t think I’ve
+    ever seen it move. Ever. Except to eat."),
+    MSGBOX_NPC)
+    release
+    end
+}
